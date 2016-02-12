@@ -1,0 +1,151 @@
+<Solution>
+  <PropertyGroup Name="Client" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="Music">
+          <Audio Name="Ignite.mp3" />
+        </Folder>
+        <Folder Name="Screens">
+          <Folder Name="Account">
+            <PlistImageFolder Image="skin.png" PListFile="skin.plist" Name=".skin_PList.Dir">
+              <PlistImageFile Name="accounts_dice_c.png" Key="accounts_dice_c.png" />
+              <PlistImageFile Name="accounts_dice_n.png" Key="accounts_dice_n.png" />
+              <PlistImageFile Name="accounts_slide_left.png" Key="accounts_slide_left.png" />
+              <PlistImageFile Name="accounts_slide_right.png" Key="accounts_slide_right.png" />
+            </PlistImageFolder>
+            <Project Name="scene.csd" Type="Scene" />
+            <Image Name="skin.png" />
+          </Folder>
+          <Folder Name="CharacterCreation">
+            <PlistImageFolder Image="skin.png" PListFile="skin.plist" Name=".skin_PList.Dir">
+              <PlistImageFile Name="characters_female_c.png" Key="characters_female_c.png" />
+              <PlistImageFile Name="characters_female_n.png" Key="characters_female_n.png" />
+              <PlistImageFile Name="characters_female_symbol.png" Key="characters_female_symbol.png" />
+              <PlistImageFile Name="characters_male_c.png" Key="characters_male_c.png" />
+              <PlistImageFile Name="characters_male_n.png" Key="characters_male_n.png" />
+              <PlistImageFile Name="characters_male_symbol.png" Key="characters_male_symbol.png" />
+            </PlistImageFolder>
+            <Project Name="scene.csd" Type="Scene" />
+            <Image Name="skin.png" />
+          </Folder>
+          <Folder Name="Loading">
+            <PlistImageFolder Image="skin.png" PListFile="skin.plist" Name=".skin_PList.Dir">
+              <PlistImageFile Name="loading_bar.png" Key="loading_bar.png" />
+            </PlistImageFolder>
+            <Project Name="scene.csd" Type="Scene" />
+            <Image Name="skin.png" />
+          </Folder>
+          <Folder Name="Play">
+            <PlistImageFolder Image="skin.png" PListFile="skin.plist" Name=".skin_PList.Dir">
+              <PlistImageFile Name="dialogue_c.png" Key="dialogue_c.png" />
+              <PlistImageFile Name="dialogue_d.png" Key="dialogue_d.png" />
+              <PlistImageFile Name="dialogue_n.png" Key="dialogue_n.png" />
+              <PlistImageFile Name="guild_c.png" Key="guild_c.png" />
+              <PlistImageFile Name="guild_d.png" Key="guild_d.png" />
+              <PlistImageFile Name="guild_n.png" Key="guild_n.png" />
+              <PlistImageFile Name="stat_c.png" Key="stat_c.png" />
+              <PlistImageFile Name="stat_d.png" Key="stat_d.png" />
+              <PlistImageFile Name="stat_n.png" Key="stat_n.png" />
+            </PlistImageFolder>
+            <Project Name="scene.csd" Type="Scene" />
+            <Image Name="skin.png" />
+          </Folder>
+        </Folder>
+        <Folder Name="Shared">
+          <PlistImageFolder Image="skin.png" PListFile="skin.plist" Name=".skin_PList.Dir">
+            <PlistImageFile Name="arrow_c.png" Key="arrow_c.png" />
+            <PlistImageFile Name="arrow_d.png" Key="arrow_d.png" />
+            <PlistImageFile Name="arrow_n.png" Key="arrow_n.png" />
+            <PlistImageFile Name="button_c.png" Key="button_c.png" />
+            <PlistImageFile Name="button_d.png" Key="button_d.png" />
+            <PlistImageFile Name="button_n.png" Key="button_n.png" />
+            <PlistImageFile Name="options_c.png" Key="options_c.png" />
+            <PlistImageFile Name="options_d.png" Key="options_d.png" />
+            <PlistImageFile Name="options_n.png" Key="options_n.png" />
+            <PlistImageFile Name="slide_bar.png" Key="slide_bar.png" />
+            <PlistImageFile Name="slide_bg.png" Key="slide_bg.png" />
+            <PlistImageFile Name="slide_node_c.png" Key="slide_node_c.png" />
+            <PlistImageFile Name="slide_node_d.png" Key="slide_node_d.png" />
+            <PlistImageFile Name="slide_node_n.png" Key="slide_node_n.png" />
+            <PlistImageFile Name="textbox.png" Key="textbox.png" />
+          </PlistImageFolder>
+          <Image Name="background.png" />
+          <TTF Name="font.ttf" />
+          <Image Name="skin.png" />
+        </Folder>
+        <Folder Name="Windows">
+          <Folder Name="Chat">
+            <PlistImageFolder Image="skin.png" PListFile="skin.plist" Name=".skin_PList.Dir">
+              <PlistImageFile Name="chat_bg.png" Key="chat_bg.png" />
+              <PlistImageFile Name="chat_textbox.png" Key="chat_textbox.png" />
+              <PlistImageFile Name="normal_button_c.png" Key="normal_button_c.png" />
+              <PlistImageFile Name="normal_button_d.png" Key="normal_button_d.png" />
+              <PlistImageFile Name="normal_button_n.png" Key="normal_button_n.png" />
+              <PlistImageFile Name="rounded_button_c.png" Key="rounded_button_c.png" />
+              <PlistImageFile Name="rounded_button_d.png" Key="rounded_button_d.png" />
+              <PlistImageFile Name="rounded_button_n.png" Key="rounded_button_n.png" />
+              <PlistImageFile Name="rounded_r_button_c.png" Key="rounded_r_button_c.png" />
+              <PlistImageFile Name="rounded_r_button_d.png" Key="rounded_r_button_d.png" />
+              <PlistImageFile Name="rounded_r_button_n.png" Key="rounded_r_button_n.png" />
+              <PlistImageFile Name="rounded_rb_button_c.png" Key="rounded_rb_button_c.png" />
+              <PlistImageFile Name="rounded_rb_button_d.png" Key="rounded_rb_button_d.png" />
+              <PlistImageFile Name="rounded_rb_button_n.png" Key="rounded_rb_button_n.png" />
+            </PlistImageFolder>
+            <Project Name="scene.csd" Type="Scene" />
+            <Image Name="skin.png" />
+          </Folder>
+          <Folder Name="Dialogue">
+            <PlistImageFolder Image="skin.png" PListFile="skin.plist" Name=".skin_PList.Dir">
+              <PlistImageFile Name="dialogue_body.png" Key="dialogue_body.png" />
+              <PlistImageFile Name="dialogue_options.png" Key="dialogue_options.png" />
+            </PlistImageFolder>
+            <Project Name="scene.csd" Type="Scene" />
+            <Image Name="skin.png" />
+          </Folder>
+          <Folder Name="Guild">
+            <PlistImageFolder Image="skin.png" PListFile="skin.plist" Name=".skin_PList.Dir">
+              <PlistImageFile Name="add_c.png" Key="add_c.png" />
+              <PlistImageFile Name="add_d.png" Key="add_d.png" />
+              <PlistImageFile Name="add_n.png" Key="add_n.png" />
+              <PlistImageFile Name="degradation_c.png" Key="degradation_c.png" />
+              <PlistImageFile Name="degradation_d.png" Key="degradation_d.png" />
+              <PlistImageFile Name="degradation_n.png" Key="degradation_n.png" />
+              <PlistImageFile Name="guild_add_bg.png" Key="guild_add_bg.png" />
+              <PlistImageFile Name="guild_bg.png" Key="guild_bg.png" />
+              <PlistImageFile Name="guild_option_bg.png" Key="guild_option_bg.png" />
+              <PlistImageFile Name="promotion_c.png" Key="promotion_c.png" />
+              <PlistImageFile Name="promotion_d.png" Key="promotion_d.png" />
+              <PlistImageFile Name="promotion_n.png" Key="promotion_n.png" />
+              <PlistImageFile Name="remove_c.png" Key="remove_c.png" />
+              <PlistImageFile Name="remove_d.png" Key="remove_d.png" />
+              <PlistImageFile Name="remove_n.png" Key="remove_n.png" />
+            </PlistImageFolder>
+            <Project Name="scene.csd" Type="Scene" />
+            <Image Name="skin.png" />
+          </Folder>
+          <Folder Name="MessageBox">
+            <Image Name="background.png" />
+            <Project Name="scene.csd" Type="Scene" />
+          </Folder>
+          <Folder Name="Options">
+            <PlistImageFolder Image="skin.png" PListFile="skin.plist" Name=".skin_PList.Dir">
+              <PlistImageFile Name="option_bg.png" Key="option_bg.png" />
+              <PlistImageFile Name="separator.png" Key="separator.png" />
+            </PlistImageFolder>
+            <Project Name="scene.csd" Type="Scene" />
+            <Image Name="skin.png" />
+          </Folder>
+          <Folder Name="Stats">
+            <PlistImageFolder Image="skin.png" PListFile="skin.plist" Name=".skin_PList.Dir">
+              <PlistImageFile Name="bg.png" Key="bg.png" />
+              <PlistImageFile Name="separator.png" Key="separator.png" />
+            </PlistImageFolder>
+            <Project Name="scene.csd" Type="Scene" />
+            <Image Name="skin.png" />
+          </Folder>
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

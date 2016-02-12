@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang>
+	<set id="Global">
+		<text id="MB_DISCONNECTION" msg="You have been disconnected from the server."/>
+		<text id="MB_LOST_CONNECTION" msg="Connection to the server has been lost."/>
+		<text id="MB_IP_BANNED" msg="Your IP is banned."/>
+		<text id="MB_UNKNOWN_PACKET" msg="You have received unknown packet.\nIt should never have happened!\nGame will be closed."/>
+		<text id="MB_ACCOUNT_DELETED" msg="Your account has been deleted."/>
+		<text id="MB_OK" msg="OK"/>
+	</set>
+    <set id="LoadingScreen">
+		<text id="CONNECTING" msg="Connecting to the server..."/>
+		<text id="RECONNECTING" msg="Reconnecting to the server..."/>
+		<text id="CANNOT_CONNECT" msg="Cannot connect to the server!"/>
+		<text id="LOAD_MSG_BOX" msg="Loading message box..."/>
+		<text id="LOAD_OPTIONS" msg="Loading options..."/>
+		<text id="LOAD_CHAT" msg="Loading chat..."/>
+		<text id="LOAD_STATISTICS" msg="Loading nerd numbers..."/>
+		<text id="LOAD_GUILD" msg="Loading guild..."/>
+		<text id="LOAD_DIALOGUE" msg="Loading dialogue..."/>
+		<text id="FINISH" msg="Almost done..."/>
+		<text id="MB_ALREADY_CONNECTED" msg="You are already connected to the server.\nIt should never have happened!\nGame will be closed."/>
+		<text id="MB_CANNOT_CONNECT" msg="Cannot connect to the server!"/>
+		<text id="MB_TRY_AGAIN" msg="Try again"/>
+		<text id="MB_EXIT" msg="Exit"/>
+		<text id="MB_OK" msg="OK"/>
+	</set>
+	<set id="AccountScreen">
+		<text id="EMAIL" msg="E-Mail Address"/>
+		<text id="REEMAIL" msg="Confirm E-Mail Address"/>
+		<text id="PASSWORD" msg="Password"/>
+		<text id="REPASSWORD" msg="Confirm Password"/>
+		<text id="EMAIL_PLACEHOLDER" msg="Type your e-mail address here..."/>
+		<text id="REEMAIL_PLACEHOLDER" msg="Retype your e-mail here..."/>
+		<text id="PASSWORD_PLACEHOLDER" msg="Type your password here..."/>
+		<text id="REPASSWORD_PLACEHOLDER" msg="Retype your password here..."/>
+		<text id="LOGIN" msg="Login"/>
+		<text id="CREATE" msg="Create"/>
+		<text id="CLEAR" msg="Clear Fields"/>
+		<text id="GENERATE" msg="Generate an account!"/>
+		<text id="SLIDE_REGISTER" msg="Slide\nto register"/>
+		<text id="SLIDE_LOGIN" msg="Slide\nto login"/>
+		<text id="SLIDE_GENERATE" msg="Or just\nclick to play"/>
+	</set>
+	<set id="CharacterCreationScreen">
+		<text id="TEXT" msg="Hello stranger!
+
+Please, tell me your name:
+
+Are You a            or a            ? And You will become a"/>
+		<text id="STATS_TEXT" msg="You will start with %d health, %d power, %d physique, %d dexterity and %d intelligence. 
+During adventure you'll gain %d health, %d power, %d physique, %d dexterity and %d intelligence per level!"/>
+		<text id="CREATE" msg="Ready to go!"/>
+	</set>
+	<set id="PlayScreen">
+		<text id="MB_GUILD_INVITE" msg="You have been invited to join %s guild."/>
+		<text id="MB_GUILD_INVITE_REFUSED" msg="Your guild invitation has been refused by %s."/>
+		<text id="MB_DIALOGUE_INIT_FAILED" msg="You don't meet requirements to start dialogue."/>
+		<text id="MB_OK" msg="OK"/>
+		<text id="MB_ACCEPT" msg="Accept"/>
+		<text id="MB_DECLINE" msg="Decline "/>
+	</set>
+	<set id="Options">
+		<text id="ACCOUNT" msg="Account"/>
+		<text id="EMAIL" msg="E-Mail Address"/>
+		<text id="PASSWORD" msg="Password"/>
+		<text id="EMAIL_PLACEHOLDER" msg="Type your e-mail address here..."/>
+		<text id="REEMAIL_PLACEHOLDER" msg="Retype your e-mail here..."/>
+		<text id="PASSWORD_PLACEHOLDER" msg="Type your password here..."/>
+		<text id="REPASSWORD_PLACEHOLDER" msg="Retype your password here..."/>
+		<text id="DELETE" msg="Delete Account"/>
+		<text id="DISPLAY" msg="Display"/>
+		<text id="RESOLUTION" msg="Resolution"/>
+		<text id="LANGUAGE" msg="Language"/>
+		<text id="SOUND" msg="Sound"/>
+		<text id="MUSIC" msg="Music"/>
+		<text id="SFX" msg="SFX"/>
+		<text id="APPLY" msg="Apply Changes"/>
+		<text id="CANCEL" msg="Cancel Changes"/>
+		<text id="MB_DELETE_ACCOUNT" msg="Are you sure to delete this account?"/>
+		<text id="MB_YES" msg="Yes"/>
+		<text id="MB_NO" msg="No"/>
+	</set>
+	<set id="Chat">
+		<text id="CHANNEL_GLOBAL" msg="Global"/>
+		<text id="CHANNEL_GUILD" msg="Guild"/>
+		<text id="CHANNEL_SYSTEM" msg="System"/>
+	</set>
+	<set id="Statistics">
+		<text id="CLOSE" msg="Close"/>
+		<text id="LEVEL" msg="Level"/>
+		<text id="CASH" msg="Cash:"/>
+		<text id="HEALTH" msg="Health:"/>
+		<text id="POWER" msg="Power:"/>
+		<text id="PHYSIQUE" msg="Physique:"/>
+		<text id="DEXTERITY" msg="Dexterity:"/>
+		<text id="INTELLIGENCE" msg="Intelligence:"/>
+	</set>
+	<set id="Guild">
+		<text id="NOTE_PLACEHOLDER" msg="Type your note"/>
+		<text id="SET_NOTE" msg="Set Note"/>
+		<text id="LEAVE" msg="Leave Guild"/>
+		<text id="CLOSE" msg="Close"/>
+		<text id="MB_PROMOTE_TO_OWNER" msg="Are you sure that you want to promote %s to owner of guild?\nYou will be degraded to lower rank."/>
+		<text id="MB_KICK" msg="Are you sure that you want to kick %s from guild?"/>
+		<text id="MB_LEAVE" msg="Are you sure you want to leave the guild?"/>
+		<text id="MB_LEAVE_OWNER" msg="Are you sure you want to leave the guild?\nAs owner, your guild will be removed."/>
+		<text id="MB_YES" msg="YES"/>
+		<text id="MB_NO" msg="NO"/>
+	</set>
+	<set id="GuildCreation">
+		<text id="TITLE" msg="Create a guild"/>
+		<text id="NAME_PLACEHOLDER" msg="Type your guild name"/>
+		<text id="TAG_PLACEHOLDER" msg="...and Tag"/>
+		<text id="CREATE" msg="Create"/>
+		<text id="CANCEL" msg="Cancel"/>
+	</set>
+	<set id="GuildSettings">
+		<text id="TITLE" msg="Guild Settings"/>
+		<text id="DESC_PLACEHOLDER" msg="Description of guild"/>
+		<text id="APPLY" msg="Apply"/>
+		<text id="CANCEL" msg="Cancel"/>
+	</set>
+	<set id="GuildAddMember">
+		<text id="TITLE" msg="Add a Member"/>
+		<text id="NAME_PLACEHOLDER" msg="Player name"/>
+		<text id="INVITE" msg="Invite"/>
+		<text id="CANCEL" msg="Cancel"/>
+	</set>
+	<set id="ValidationMsg">
+		<text id="MB_OK" msg="OK"/>
+		<text id="MB_EMAIL_TOO_SHORT" msg="Email is too short."/>
+		<text id="MB_EMAIL_TOO_LONG" msg="Email is too long."/>
+		<text id="MB_EMAIL_INVALID_STRING" msg="Email is invalid."/>
+		<text id="MB_EMAIL_EXISTS" msg="Email is already taken."/>
+		<text id="MB_PASSWORD_TOO_SHORT" msg="Password is too short."/>
+		<text id="MB_PASSWORD_TOO_LONG" msg="Password is too long."/>
+		<text id="MB_PASSWORD_INVALID_STRING" msg="Password is invalid."/>
+		<text id="MB_EMAIL_OR_PASSWORD_IS_INCORRECT" msg="Email or password is incorrect."/>
+		<text id="MB_NAME_TOO_SHORT" msg="Name is too short."/>
+		<text id="MB_NAME_TOO_LONG" msg="Name is too long."/>
+		<text id="MB_NAME_INVALID_STRING" msg="Name is invalid."/>
+		<text id="MB_NAME_EXISTS" msg="Name is already taken."/>
+		<text id="MB_ACCOUNT_IN_USE" msg="Account is in use."/>
+		<text id="MB_ACCOUNT_BANNED" msg="Account is banned."/>
+		<text id="MB_GUILD_NAME_TOO_SHORT" msg="Guild name is too short."/>
+		<text id="MB_GUILD_NAME_TOO_LONG" msg="Guild name is too long."/>
+		<text id="MB_GUILD_NAME_EXISTS" msg="Guild name is already taken."/>
+		<text id="MB_GUILD_TAG_TOO_SHORT" msg="Guild tag is too short."/>
+		<text id="MB_GUILD_TAG_TOO_LONG" msg="Guild tag is too long."/>
+		<text id="MB_GUILD_TAG_EXISTS" msg="Guild tag is already taken."/>
+		<text id="MB_CHARACTER_DIDNT_EXIST" msg="Character didn't exist."/>
+		<text id="MB_CHARACTER_OFFLINE" msg="Character is offline."/>
+		<text id="MB_CHARACTER_ALREADY_IN_GUILD" msg="Character is already in guild."/>
+		<text id="MB_HACK" msg="Die in the hell!"/>
+		<text id="MB_REEMAILL_DIDNT_MATCH" msg="Email confirmation doesn't match email."/>
+		<text id="MB_REPASSWORD_DIDNT_MATCH" msg="Password confirmation doesn't match password."/>
+	</set>
+</lang>

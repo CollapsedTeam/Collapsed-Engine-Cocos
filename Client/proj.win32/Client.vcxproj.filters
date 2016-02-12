@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Screens">
+      <UniqueIdentifier>{da07ca07-caf7-45ab-9df6-9c5f2aadf64d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Screens\Account">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character">
+      <UniqueIdentifier>{a170d002-87d7-4a3c-a69e-36b19a0778e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Screens\CharacterCreation">
+      <UniqueIdentifier>{7ce8399c-35a0-4e8b-be12-b50a24873b17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client">
+      <UniqueIdentifier>{0df27531-36c4-4345-b40b-ed25834e6542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{fe9ae74a-f0c7-4134-a373-b2ce63c56aa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\Guild">
+      <UniqueIdentifier>{78d024d1-a8b3-45bc-abb7-beb4ef6d7802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\Dialogue">
+      <UniqueIdentifier>{56a6049d-5a3f-4fdb-87ad-e3bd54eccf22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\Chat">
+      <UniqueIdentifier>{79c23794-2fc6-421f-ab35-e89cdf6d4e79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\DragWindow">
+      <UniqueIdentifier>{3371a3cb-d20c-4a5a-8b31-8ab19ca3662c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lang">
+      <UniqueIdentifier>{88dbba61-f7f2-45af-b7b8-2de00fdfcacd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\Options">
+      <UniqueIdentifier>{a19cebc5-66d1-48c4-aeef-96858acdfbc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\GuildAddMember">
+      <UniqueIdentifier>{6a69b5ce-131d-4a44-9f6d-83a175f5078e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\GuildSettings">
+      <UniqueIdentifier>{b77bb97d-3045-48e7-bbd7-a8c9e64d364b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\GuildCreation">
+      <UniqueIdentifier>{c730aa96-f259-4ce7-822a-23f1556022b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\MsgBox">
+      <UniqueIdentifier>{758d4dc0-dbca-4bb4-827e-2cdb34bb2f39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Screens\Loading">
+      <UniqueIdentifier>{cc93c504-5907-46c8-a6da-823b1d4029aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\Statistics">
+      <UniqueIdentifier>{4caaa5af-0bac-489d-abcd-98ed3ca9957b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Screens\Play">
+      <UniqueIdentifier>{dca12494-b799-4f01-82b2-a7dbfe0cfe0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packets">
+      <UniqueIdentifier>{5529af0f-c22e-4427-bb68-c24a1118164a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32\resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{547e6b89-ecbe-459b-920c-acdc503019b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Loader">
+      <UniqueIdentifier>{bbdc9756-dde9-4ff2-a92e-a48aaa50fb89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AccountScreen.cpp">
+      <Filter>Screens\Account</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Character.cpp">
+      <Filter>Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CharacterCreationScreen.cpp">
+      <Filter>Screens\CharacterCreation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Chat.cpp">
+      <Filter>Windows\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Client.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Dialogue.cpp">
+      <Filter>Windows\Dialogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Guild.cpp">
+      <Filter>Windows\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DragWindow.cpp">
+      <Filter>Windows\DragWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Lang.cpp">
+      <Filter>Lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Options.cpp">
+      <Filter>Windows\Options</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GuildAddMember.cpp">
+      <Filter>Windows\GuildAddMember</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GuildSettings.cpp">
+      <Filter>Windows\GuildSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GuildCreation.cpp">
+      <Filter>Windows\GuildCreation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MsgBox.cpp">
+      <Filter>Windows\MsgBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LoadingScreen.cpp">
+      <Filter>Screens\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Window.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Statistics.cpp">
+      <Filter>Windows\Statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Langs.cpp" />
+    <ClCompile Include="..\Classes\Resolutions.cpp" />
+    <ClCompile Include="..\Classes\Screen.cpp">
+      <Filter>Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PlayScreen.cpp">
+      <Filter>Screens\Play</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Packets.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PacketHandler.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\App.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Loader.cpp">
+      <Filter>Loader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>win32\resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AccountScreen.h">
+      <Filter>Screens\Account</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Character.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Chat.h">
+      <Filter>Windows\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Client.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Dialogue.h">
+      <Filter>Windows\Dialogue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Config.h" />
+    <ClInclude Include="..\Classes\Guild.h">
+      <Filter>Windows\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DragWindow.h">
+      <Filter>Windows\DragWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Lang.h">
+      <Filter>Lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Options.h">
+      <Filter>Windows\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GuildAddMember.h">
+      <Filter>Windows\GuildAddMember</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GuildSettings.h">
+      <Filter>Windows\GuildSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GuildCreation.h">
+      <Filter>Windows\GuildCreation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MsgBox.h">
+      <Filter>Windows\MsgBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LoadingScreen.h">
+      <Filter>Screens\Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Window.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Statistics.h">
+      <Filter>Windows\Statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Screen.h">
+      <Filter>Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PlayScreen.h">
+      <Filter>Screens\Play</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CharacterCreationScreen.h">
+      <Filter>Screens\CharacterCreation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Packets.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Main.h" />
+    <ClInclude Include="..\Classes\App.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Loader.h">
+      <Filter>Loader</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

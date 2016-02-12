@@ -1,0 +1,44 @@
+CALL_MY_DIR := $(call my-dir)
+CLIENT_PATH := $(CALL_MY_DIR)/../..
+COLLAPSED_ENGINE_PATH := $(CLIENT_PATH)/..
+
+# Jinra
+LOCAL_PATH := $(COLLAPSED_ENGINE_PATH)/lib/android
+include $(CLEAR_VARS)
+LOCAL_MODULE    := libJinra
+LOCAL_SRC_FILES := libJinra.a
+include $(PREBUILT_STATIC_LIBRARY)
+
+LOCAL_PATH := $(CALL_MY_DIR)
+include $(CLEAR_VARS)
+
+$(warning $(LOCAL_PATH))
+$(warning $(CLIENT_PATH))
+$(warning $(COLLAPSED_ENGINE_PATH))
+
+LOCAL_MODULE := cocos2dcpp_shared
+
+LOCAL_MODULE_FILENAME := libcocos2dcpp
+
+LOCAL_SRC_FILES := $(LOCAL_PATH)/../hellocpp/main.cpp
+SRC_FILES := $(wildcard $(CLIENT_PATH)/Classes/*.cpp)
+SRC_FILES := $(SRC_FILES:$(LOCAL_PATH)/%=%)
+LOCAL_SRC_FILES += $(SRC_FILES)
+
+LOCAL_C_INCLUDES := $(CLIENT_PATH)/Classes
+LOCAL_C_INCLUDES += $(COLLAPSED_ENGINE_PATH)/include
+
+# _COCOS_HEADER_ANDROID_BEGIN
+# _COCOS_HEADER_ANDROID_END
+
+LOCAL_STATIC_LIBRARIES := cocos2dx_static Jinra
+
+# _COCOS_LIB_ANDROID_BEGIN
+# _COCOS_LIB_ANDROID_END
+
+include $(BUILD_SHARED_LIBRARY)
+
+$(call import-module,./prebuilt-mk)
+
+# _COCOS_LIB_IMPORT_ANDROID_BEGIN
+# _COCOS_LIB_IMPORT_ANDROID_END

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+			<key>rounded_button_n.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{94, 33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{94, 33}</string>
+            </dict>
+			<key>rounded_button_c.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,37},{94, 33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{94, 33}</string>
+            </dict>
+			<key>rounded_button_d.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,72},{94, 33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{94, 33}</string>
+            </dict>
+			<key>rounded_r_button_n.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{184,2},{94, 33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{94, 33}</string>
+            </dict>
+			<key>rounded_r_button_c.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{184,37},{94, 33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{94, 33}</string>
+            </dict>
+			<key>rounded_r_button_d.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{184,72},{94, 33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{94, 33}</string>
+            </dict>
+			<key>rounded_rb_button_n.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{281,2},{94, 33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{94, 33}</string>
+            </dict>
+			<key>rounded_rb_button_c.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{281,37},{94, 33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{94, 33}</string>
+            </dict>
+			<key>rounded_rb_button_d.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{281,72},{94, 33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{94, 33}</string>
+            </dict>
+			<key>normal_button_n.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{99,2},{82, 33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{82, 33}</string>
+            </dict>
+			<key>normal_button_c.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{99,37},{82, 33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{82, 33}</string>
+            </dict>
+			<key>normal_button_d.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{99,72},{82, 33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{82, 33}</string>
+            </dict>
+			<key>chat_bg.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,108},{433, 277}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{433, 277}</string>
+            </dict>
+			<key>chat_textbox.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{378,2},{340, 33}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{340, 33}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>skin.png</string>
+			<key>textureFileName</key>
+            <string>skin.png</string>
+        </dict>
+    </dict>
+</plist>

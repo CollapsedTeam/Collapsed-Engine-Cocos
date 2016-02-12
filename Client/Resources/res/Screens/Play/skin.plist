@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+			<key>guild_n.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{66, 66}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{66, 66}</string>
+            </dict>
+            <key>guild_c.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,68},{66, 66}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{66, 66}</string>
+            </dict>
+            <key>guild_d.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,136},{66, 66}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{66, 66}</string>
+            </dict>
+            <key>stat_n.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{68,0},{66, 66}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{66, 66}</string>
+            </dict>
+            <key>stat_c.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{68,68},{66, 66}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{66, 66}</string>
+            </dict>
+            <key>stat_d.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{68,136},{66, 66}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{66, 66}</string>
+            </dict>
+            <key>dialogue_n.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{136,0},{66, 66}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{66, 66}</string>
+            </dict>
+            <key>dialogue_c.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{136,68},{66, 66}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{66, 66}</string>
+            </dict>
+            <key>dialogue_d.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{136,136},{66, 66}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{66, 66}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>skin.png</string>
+			<key>textureFileName</key>
+            <string>skin.png</string>
+        </dict>
+    </dict>
+</plist>

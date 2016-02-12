@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang>
+	<set id="Global">
+		<text id="MB_DISCONNECTION" msg="Zostałeś odłączony od serwera."/>
+		<text id="MB_LOST_CONNECTION" msg="Połączenie z serwerem zostało przerwane."/>
+		<text id="MB_IP_BANNED" msg="Twoje ip jest zablokowane."/>
+		<text id="MB_UNKNOWN_PACKET" msg="Otrzymałeś nieznany pakiet.\nTo nie powinno się zdarzyć!\nGra zostanie wyłączona."/>
+		<text id="MB_ACCOUNT_DELETED" msg="Your account has been deleted."/>
+		<text id="MB_OK" msg="OK"/>
+	</set>
+    <set id="LoadingScreen">
+		<text id="CONNECTING" msg="Nawiązywanie połączenia z serwerem..."/>
+		<text id="RECONNECTING" msg="Trwa ponowe łączenie z serwerem..."/>
+		<text id="CANNOT_CONNECT" msg="Nie udało się połączyć z serwerem!"/>
+		<text id="LOAD_MSG_BOX" msg="Ładowanie komunikatów..."/>
+		<text id="LOAD_OPTIONS" msg="Ładowanie ustawień..."/>
+		<text id="LOAD_CHAT" msg="Ładowanie czatu..."/>
+		<text id="LOAD_STATISTICS" msg="Ładowanie statystyk dla nerdów..."/>
+		<text id="LOAD_GUILD" msg="Ładowanie gildii..."/>
+		<text id="LOAD_DIALOGUE" msg="Ładowanie dialogu..."/>
+		<text id="FINISH" msg="Zostało jeszcze kilka rzeczy..."/>
+		<text id="MB_ALREADY_CONNECTED" msg="Jesteś już połączony z serwerem.\nTo nie powinno się nigdy zdarzyć!\nGra zostanie wyłączona."/>
+		<text id="MB_CANNOT_CONNECT" msg="Nie udało się połączyć z serwerem!"/>
+		<text id="MB_TRY_AGAIN" msg="Spróbuj ponownie"/>
+		<text id="MB_EXIT" msg="Wyjdź"/>
+		<text id="MB_OK" msg="OK"/>
+	</set>
+	<set id="AccountScreen">
+		<text id="EMAIL" msg="Adres E-Mail"/>
+		<text id="REEMAIL" msg="Powtórz Adres E-Mail"/>
+		<text id="PASSWORD" msg="Hasło"/>
+		<text id="REPASSWORD" msg="Powtórz Hasło"/>
+		<text id="EMAIL_PLACEHOLDER" msg="Wpisz tu swój adres e-mail..."/>
+		<text id="REEMAIL_PLACEHOLDER" msg="Podaj ponownie adres e-mail..."/>
+		<text id="PASSWORD_PLACEHOLDER" msg="Wpisz tu swoje hasło..."/>
+		<text id="REPASSWORD_PLACEHOLDER" msg="Podaj ponownie hasło..."/>
+		<text id="LOGIN" msg="Zaloguj"/>
+		<text id="CREATE" msg="Stwórz"/>
+		<text id="CLEAR" msg="Wyczyść pola"/>
+		<text id="GENERATE" msg="   Wygeneruj konto!"/>
+		<text id="SLIDE_REGISTER" msg="Idź\ndo rejestracji"/>
+		<text id="SLIDE_LOGIN" msg="Przesuń\ndo logowania"/>
+		<text id="SLIDE_GENERATE" msg="Lub \nkliknij aby grać"/>
+	</set>
+	<set id="CharacterCreationScreen">
+		<text id="TEXT" msg="Witaj nieznajomy!
+
+Najpierw podaj swoje imię:
+
+     Jesteś             czy            ? Pragniesz zostać"/>
+		<text id="STATS_TEXT" msg="Podróż zaczniesz z %d życia, %d mocy, %d tężyzną, %d zręcznoscią i %d intelektu.
+ W trakcie przygody zyskasz %d zdrowia, %d mocy, %d tężyzny, %d zręczności i %d intelektu na poziom!"/>
+		<text id="CREATE" msg="Gotów do drogi!"/>
+	</set>
+	<set id="PlayScreen">
+		<text id="MB_GUILD_INVITE" msg="Zostałeś zaproszony do gildii %s."/>
+		<text id="MB_GUILD_INVITE_REFUSED" msg="%s odrzucił Twoje zaproszenie do gildii."/>
+		<text id="MB_DIALOGUE_INIT_FAILED" msg="Nie spełniasz wymagań by rozpocząć dialog."/>
+		<text id="MB_OK" msg="OK"/>
+		<text id="MB_ACCEPT" msg="Przyjmij"/>
+		<text id="MB_DECLINE" msg="Odrzuć"/>
+	</set>
+	<set id="Options">
+		<text id="ACCOUNT" msg="Konto"/>
+		<text id="EMAIL" msg="Adres E-mail"/>
+		<text id="PASSWORD" msg="Hasło"/>
+		<text id="EMAIL_PLACEHOLDER" msg="Wpisz tu swój adres e-mail..."/>
+		<text id="REEMAIL_PLACEHOLDER" msg="Podaj ponownie adres e-mail..."/>
+		<text id="PASSWORD_PLACEHOLDER" msg="Wpisz tu swoje hasło..."/>
+		<text id="REPASSWORD_PLACEHOLDER" msg="Podaj ponownie hasło..."/>
+		<text id="DELETE" msg="Usuń konto"/>
+		<text id="DISPLAY" msg="Obraz"/>
+		<text id="RESOLUTION" msg="Rozdzielczość"/>
+		<text id="LANGUAGE" msg="Język"/>
+		<text id="SOUND" msg="Dźwięk"/>
+		<text id="MUSIC" msg="Muzyka"/>
+		<text id="SFX" msg="Efekty"/>
+		<text id="APPLY" msg="Zapisz zmiany"/>
+		<text id="CANCEL" msg="Odrzuć zmiany"/>
+		<text id="MB_DELETE_ACCOUNT" msg="Jesteś pewien, że chcesz usunąc konto?"/>
+		<text id="MB_YES" msg="Tak"/>
+		<text id="MB_NO" msg="Nie"/>
+	</set>
+	<set id="Chat">
+		<text id="CHANNEL_GLOBAL" msg="Globalny"/>
+		<text id="CHANNEL_GUILD" msg="Gildia"/>
+		<text id="CHANNEL_SYSTEM" msg="System"/>
+	</set>
+	<set id="Statistics">
+		<text id="CLOSE" msg="Zamknij"/>
+		<text id="LEVEL" msg="Poziom"/>
+		<text id="CASH" msg="Kasa:"/>
+		<text id="HEALTH" msg="Zdrowie:"/>
+		<text id="POWER" msg="Moc:"/>
+		<text id="PHYSIQUE" msg="Tężyzna:"/>
+		<text id="DEXTERITY" msg="Zręcznosć:"/>
+		<text id="INTELLIGENCE" msg="Intelekt:"/>
+	</set>
+	<set id="Guild">
+		<text id="NOTE_PLACEHOLDER" msg="Wpisz swoją notkę"/>
+		<text id="SET_NOTE" msg="Ustaw notkę"/>
+		<text id="LEAVE" msg="Opuść gildię"/>
+		<text id="CLOSE" msg="Zamknij"/>
+		<text id="MB_PROMOTE_TO_OWNER" msg="Jesteś pewien, że chcesz mianować %s właścicielem gildii?\nTwoja ranga zostanie obniżona."/>
+		<text id="MB_KICK" msg="Jesteś pewien, że chcesz wyrzucić %s z gildii?"/>
+		<text id="MB_LEAVE" msg="Jesteś pewien, że chcesz opóścić gilgię?"/>
+		<text id="MB_LEAVE_OWNER" msg="Jesteś pewien, że chcesz opóścić gilgię?\nOpuszczając ją jako wołąściciel\nspowodujesz rozwiązanie gildii."/>
+		<text id="MB_YES" msg="Tak"/>
+		<text id="MB_NO" msg="Nie"/>
+	</set>
+	<set id="GuildCreation">
+		<text id="TITLE" msg="Stwórz gildię"/>
+		<text id="NAME_PLACEHOLDER" msg="Podaj jej nazwę"/>
+		<text id="TAG_PLACEHOLDER" msg="...i Tag"/>
+		<text id="CREATE" msg="Stwórz"/>
+		<text id="CANCEL" msg="Anuluj"/>
+	</set>
+	<set id="GuildSettings">
+		<text id="TITLE" msg="Ustawienia Gildii"/>
+		<text id="DESC_PLACEHOLDER" msg="Tu wprowadź opis gildii"/>
+		<text id="APPLY" msg="Zapisz"/>
+		<text id="CANCEL" msg="Anuluj"/>
+	</set>
+	<set id="GuildAddMember">
+		<text id="TITLE" msg="Dodaj członka"/>
+		<text id="NAME_PLACEHOLDER" msg="Nazwa gracza"/>
+		<text id="INVITE" msg="Zaproś"/>
+		<text id="CANCEL" msg="Anuluj"/>
+	</set>
+	<set id="ValidationMsg">
+		<text id="MB_OK" msg="OK"/>
+		<text id="MB_EMAIL_TOO_SHORT" msg="E-mail jest za krótki."/>
+		<text id="MB_EMAIL_TOO_LONG" msg="E-mail jest za długi."/>
+		<text id="MB_EMAIL_INVALID_STRING" msg="E-mail jest niepoprawny."/>
+		<text id="MB_EMAIL_EXISTS" msg="E-mail jest już zajęty."/>
+		<text id="MB_PASSWORD_TOO_SHORT" msg="Hasło jest za krótkie."/>
+		<text id="MB_PASSWORD_TOO_LONG" msg="Hasło jest za długie."/>
+		<text id="MB_PASSWORD_INVALID_STRING" msg="Hasło jest nieprawidłowe."/>
+		<text id="MB_EMAIL_OR_PASSWORD_IS_INCORRECT" msg="E-mail lub hasło jest nieprawidłowe."/>
+		<text id="MB_NAME_TOO_SHORT" msg="Imię jest zbyt krótkie."/>
+		<text id="MB_NAME_TOO_LONG" msg="Imię jest za długie."/>
+		<text id="MB_NAME_INVALID_STRING" msg="Imię jest nieprawidłowe."/>
+		<text id="MB_NAME_EXISTS" msg="Imię jest już zajętę."/>
+		<text id="MB_ACCOUNT_IN_USE" msg="Konto jest obecnie używane."/>
+		<text id="MB_ACCOUNT_BANNED" msg="Konto zostało zablokowane."/>
+		<text id="MB_GUILD_NAME_TOO_SHORT" msg="Nazwa gildii jest za krótka."/>
+		<text id="MB_GUILD_NAME_TOO_LONG" msg="Nazwa gildii jest za długa."/>
+		<text id="MB_GUILD_NAME_EXISTS" msg="Nazwa gildii jest już zajęta."/>
+		<text id="MB_GUILD_TAG_TOO_SHORT" msg="Tag gildii jest za krótki."/>
+		<text id="MB_GUILD_TAG_TOO_LONG" msg="Tag gildii jest za długi."/>
+		<text id="MB_GUILD_TAG_EXISTS" msg="Tag gildii jest już zajęty."/>
+		<text id="MB_CHARACTER_DIDNT_EXIST" msg="Postać nie istnieje."/>
+		<text id="MB_CHARACTER_OFFLINE" msg="Postać jest niedostępna."/>
+		<text id="MB_CHARACTER_ALREADY_IN_GUILD" msg="Postać posiada już gildię."/>
+		<text id="MB_HACK" msg="Gnij w piekle!"/>
+		<text id="MB_REEMAILL_DIDNT_MATCH" msg="Podane adresy E-mail się różnią."/>
+		<text id="MB_REPASSWORD_DIDNT_MATCH" msg="Podane hasła się rożnią."/>
+	</set>
+</lang>

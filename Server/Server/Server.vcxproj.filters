@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Main.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>Console</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopCounter.h">
+      <Filter>LoopCounter</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL.h">
+      <Filter>MySQL</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Account.h">
+      <Filter>Client\Account</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Error.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Info.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Warn.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Guild.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Client\Account\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="sha1.h">
+      <Filter>sha1</Filter>
+    </ClInclude>
+    <ClInclude Include="Class.h">
+      <Filter>Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Script.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildMember.h">
+      <Filter>Guild\GuildMember</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogue.h">
+      <Filter>Dialogue</Filter>
+    </ClInclude>
+    <ClInclude Include="QueriesQueue.h">
+      <Filter>QueriesQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryData.h">
+      <Filter>QueryData</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="AccountModule.h">
+      <Filter>Modules\Account</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectionModule.h">
+      <Filter>Modules\Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterModule.h">
+      <Filter>Modules\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatModule.h">
+      <Filter>Modules\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildModule.h">
+      <Filter>Modules\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogueModule.h">
+      <Filter>Modules\Dialogue</Filter>
+    </ClInclude>
+    <ClInclude Include="Module.h">
+      <Filter>Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLogger.h">
+      <Filter>FileLogger</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{68c2cb8f-f146-4dc5-ae9b-9bc58eda905e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileLogger">
+      <UniqueIdentifier>{8e5f037b-7c40-4867-833b-e3119209ad81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Console">
+      <UniqueIdentifier>{5705d149-337b-4b3f-9be1-627e06020497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoopCounter">
+      <UniqueIdentifier>{cf7ed006-e8b6-4ce7-9f6c-26bc30296335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MySQL">
+      <UniqueIdentifier>{8d7e57ec-6748-4238-91bf-a3d3ee46f278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{33d63f9a-c9a2-4240-9ba7-f0ff78a4839d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client">
+      <UniqueIdentifier>{c289ba00-2837-4422-ab0b-1001c62c8558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\Account">
+      <UniqueIdentifier>{167c55d9-3481-43a1-b97d-cd9d15ebdb6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exceptions">
+      <UniqueIdentifier>{32eff777-a5c6-4bd3-8f96-52d8661458a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{a1a22990-282f-40d7-9ae4-777def0a9eb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\Account\Character">
+      <UniqueIdentifier>{b588a5a1-22ac-4736-b1d5-e7ee7aed8b05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sha1">
+      <UniqueIdentifier>{21e011f2-1e12-46eb-894b-143c44792157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class">
+      <UniqueIdentifier>{f52652cb-26f0-43b6-9537-2920946a49f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Guild">
+      <UniqueIdentifier>{d2e02b64-df8e-4073-94f6-0eb7983b60d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{4b2e6a39-1a75-4083-ad4c-e535752c13f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Guild\GuildMember">
+      <UniqueIdentifier>{fdd3ba58-c134-4d6d-8f2e-c76d426a52e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogue">
+      <UniqueIdentifier>{e25545fc-c813-4c0a-9c69-fde895bcca44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QueriesQueue">
+      <UniqueIdentifier>{c101d235-b4f4-4e33-99ec-ef7e6eb359b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QueryData">
+      <UniqueIdentifier>{9f7c00c0-d650-466a-b82a-3a6e900ee1e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules">
+      <UniqueIdentifier>{3e5f6446-c9fe-4c74-8525-27154345d733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Account">
+      <UniqueIdentifier>{e2c56a7d-7827-48ad-8fe2-ea4b1f2a350c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Connection">
+      <UniqueIdentifier>{369239fe-97f4-4ec9-b74e-539255593a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Character">
+      <UniqueIdentifier>{5f732050-0aa7-4ec7-8a49-a8a415cb7c78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Chat">
+      <UniqueIdentifier>{029da350-e85f-472a-87ae-f01da8feb7bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Guild">
+      <UniqueIdentifier>{340557d8-33fa-4aab-8826-d32cbb56ff12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Dialogue">
+      <UniqueIdentifier>{2162cfde-5acc-43d9-921f-64c0d7282906}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopCounter.cpp">
+      <Filter>LoopCounter</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>Console</Filter>
+    </ClCompile>
+    <ClCompile Include="MySQL.cpp">
+      <Filter>MySQL</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Account.cpp">
+      <Filter>Client\Account</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketHandler.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Guild.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Client\Account\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="sha1.cpp">
+      <Filter>sha1</Filter>
+    </ClCompile>
+    <ClCompile Include="Class.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands.cpp">
+      <Filter>Console</Filter>
+    </ClCompile>
+    <ClCompile Include="Script.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildMember.cpp">
+      <Filter>Guild\GuildMember</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogue.cpp">
+      <Filter>Dialogue</Filter>
+    </ClCompile>
+    <ClCompile Include="QueriesQueue.cpp">
+      <Filter>QueriesQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryData.cpp">
+      <Filter>QueryData</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountModule.cpp">
+      <Filter>Modules\Account</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterModule.cpp">
+      <Filter>Modules\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionModule.cpp">
+      <Filter>Modules\Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatModule.cpp">
+      <Filter>Modules\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogueModule.cpp">
+      <Filter>Modules\Dialogue</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildModule.cpp">
+      <Filter>Modules\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="Module.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="FileLogger.cpp">
+      <Filter>FileLogger</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+			<key>characters_male_n.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{65, 65}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{65, 65}</string>
+            </dict>
+			<key>characters_male_c.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,67},{65, 65}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{65, 65}</string>
+            </dict>
+			<key>characters_male_symbol.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,133},{65, 65}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{65, 65}</string>
+            </dict>
+			<key>characters_female_n.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{67,0},{65, 65}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{65, 65}</string>
+            </dict>
+			<key>characters_female_c.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{67,67},{65, 65}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{65, 65}</string>
+            </dict>
+			<key>characters_female_symbol.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{67,133},{65, 65}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{65, 65}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>skin.png</string>
+			<key>textureFileName</key>
+            <string>skin.png</string>
+        </dict>
+    </dict>
+</plist>

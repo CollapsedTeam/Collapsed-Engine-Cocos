@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dial>
+	<t1 who="Daddy">Hello adventurer, what brings you to me?</t1>
+	<o1>Who are you?</o1>
+	<t2 who="Daddy">I'm a simple guy, who likes darkness. It's so cozy. People used to call me daddy.</t2>
+	<o2>I need to know more...</o2>
+	<t3 who="Daddy">About?</t3>
+	<t4 who="Daddy">Do you want ask me for something more?</t4>
+	<o3>What is this place?</o3>
+	<t5 who="Daddy">We're exactly in the middle of nowhere. It's hard to describe in other words. Those less educated would say "we are in black ass". I hope, You're not including to them.</t5>
+	<o4>Do you know how to get out of here?</o4>
+	<t6 who="Daddy">Of course... You have to let me kill you. Don't look me like that, it's not my idea. It's only way to get out from the Between World.</t6>
+	<o5>No way! I don't let you kill me!</o5>
+	<o6>Are you serious?</o6>
+	<t7 who="Daddy">Did you think I'm serious?</t7>
+	<t8 who="[P]">Yeah! You sound so cocky... I really thought you mean exactly what you said.</t8>
+	<t9 who="Daddy">Ha! Look at You! You know, I start to like you. I want to give you something, close your eyes for a moment. It's not death, I promise.</t9>
+	<o7>Nevermind</o7>
+	<o8>Farewell.</o8>
+</dial>

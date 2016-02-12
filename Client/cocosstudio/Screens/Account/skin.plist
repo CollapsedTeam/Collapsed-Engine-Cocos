@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+			<key>accounts_slide_right.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{71, 75}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{71, 75}</string>
+            </dict>
+			<key>accounts_slide_left.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{73,0},{71, 75}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{71, 75}</string>
+            </dict>
+			<key>accounts_dice_n.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{146,0},{160, 158}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{160, 158}</string>
+            </dict>
+			<key>accounts_dice_c.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{308,0},{160, 158}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{160, 158}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>skin.png</string>
+			<key>textureFileName</key>
+            <string>skin.png</string>
+        </dict>
+    </dict>
+</plist>

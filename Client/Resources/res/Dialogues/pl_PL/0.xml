@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dial>
+	<t1 who="Tatko">Witaj wędrowcze, co Cię do mnie sprowadza?</t1>
+	<o1>Kim jesteś?</o1>
+	<t2 who="Tatko">Jestem prostym człowiekiem, który lubi ciemność. Jest taka przytulna. Ludzie zwykli nazywać mnie tatkiem.</t2>
+	<o2>Musze wiedzieć więcej...</o2>
+	<t3 who="Tatko">Odnosnie?</t3>
+	<t4 who="Tatko">Czy chcesz jeszcze o coś mnie zapytać?</t4>
+	<o3>Co to za miejsce?</o3>
+	<t5 who="Tatko">Jesteśmy dokładnie pośrodku niczego. Ciężko inaczej określić to miejsce. Ci mniej wychowani powiedzieliby "jesteśmy w czarnej dupie". Mam nadzieję, że się do nich nie zaliczasz.</t5>
+	<o4>Wiesz jak się stąd wydostać?</o4>
+	<t6 who="Tatko">Oczywiście... Musisz dać się zabić. Nie patrz tak na mnie, mówię poważnie. To jedyny sposób na wydostanie się z międzyświecia. Moge Ci pomóc, jeśli chcesz.</t6>
+	<o5>Nie ma mowy, nie dam się zabić!</o5>
+	<o6>Ty tak na serio?</o6>
+	<t7 who="Tatko">Na prawdę pomyślałeś, że mówiłem szczrze?</t7>
+	<t8 who="[P]">Brzmiałeś na całkiem pewnego siebie, no i cała ta powaga w głosie...</t8>
+	<t9 who="Tatko">Ha! To Ci dopiero! Wiesz co, polubiłem Cię, dlatego dam Ci prezent. Zamknij oczy.</t9>
+	<o7>Rozmyśliłem się</o7>
+	<o8>Żegnaj.</o8>
+</dial>

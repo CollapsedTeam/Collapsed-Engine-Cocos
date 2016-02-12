@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+        <key>guild_bg.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1,2},{970, 480}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{970, 480}</string>
+            </dict>
+            <key>guild_add_bg.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{417,512},{428, 157}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{428, 157}</string>
+            </dict>
+            <key>guild_option_bg.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,512},{356, 480}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{356, 480}</string>
+            </dict>
+            <key>promotion_n.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{359,512},{18, 16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{18, 16}</string>
+            </dict>
+            <key>promotion_c.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{359,530},{18, 16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{18, 16}</string>
+            </dict>
+              <key>promotion_d.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{359,548},{18, 16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{18, 16}</string>
+            </dict>
+             <key>degradation_n.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{379,512},{18, 16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{18, 16}</string>
+            </dict>
+            <key>degradation_c.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{379,530},{18, 16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{18, 16}</string>
+            </dict>
+              <key>degradation_d.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{379,548},{18, 16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{18, 16}</string>
+            </dict>
+            <key>remove_n.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{399,512},{16, 16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{16, 16}</string>
+            </dict>
+            <key>remove_c.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{399,530},{16, 16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{16, 16}</string>
+            </dict>
+              <key>remove_d.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{399,548},{16, 16}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{16, 16}</string>
+            </dict>
+            <key>add_n.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{358,566},{40, 34}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{40, 34}</string>
+            </dict>
+            <key>add_c.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{358,602},{40, 34}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{40, 34}</string>
+            </dict>
+            <key>add_d.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{358,638},{40, 34}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceSize</key>
+                <string>{40, 34}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>skin.png</string>
+			<key>textureFileName</key>
+            <string>skin.png</string>
+        </dict>
+    </dict>
+</plist>
