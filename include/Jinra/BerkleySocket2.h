@@ -46,11 +46,11 @@ public:
 	 */
 	static bool isPortInUse(u16 port, cchar* hostAddress, u16 addressFamily, s32 type);
 
-	inline const BerkleySocket2::BindParameters* getBindings() const {
+	 const BerkleySocket2::BindParameters* getBindings() const {
 		return &_binding;
 	}
 
-	inline Socket2 getSocket() const {
+	 Socket2 getSocket() const {
 		return _rns2Socket;
 	}
 

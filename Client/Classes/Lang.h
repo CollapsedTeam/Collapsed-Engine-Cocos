@@ -23,13 +23,13 @@ public:
 
 	tinyxml2::XMLElement* getSetElement(cchar* setName);
 
-	inline cchar* getLocale() const {
+	cchar* getLocale() const {
 		return _locale.c_str();
 	}
 
 	SString getText(tinyxml2::XMLElement* setElement, cchar* id);
 
-	inline SString getText(cchar* setName, cchar* id) {
+	SString getText(cchar* setName, cchar* id) {
 		return getText(getSetElement(setName), id);
 	}
 

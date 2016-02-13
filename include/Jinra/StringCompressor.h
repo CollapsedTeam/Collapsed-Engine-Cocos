@@ -73,7 +73,7 @@ public:
 	 * instance of NetPeer exists, or unless you call addReference yourself.
 	 * @return the unique instance of the StringCompressor 
 	 */
-	static inline StringCompressor* getInstance() {
+	static StringCompressor* getInstance() {
 		return _instance;
 	}
 

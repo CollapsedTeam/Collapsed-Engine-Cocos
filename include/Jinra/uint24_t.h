@@ -68,11 +68,11 @@ public:
 
 	const uint24_t operator*(const u32& other) const;
 	
-	inline operator u32() {
+	 operator u32() {
 		return val;
 	}
 
-	inline operator u32() const {
+	 operator u32() const {
 		return val;
 	}
 

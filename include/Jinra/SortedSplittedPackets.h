@@ -18,11 +18,11 @@ public:
 
 	bool add(InternalPacket* internalPacket);
 
-	inline u32 getAllocSize() const {
+	 u32 getAllocSize() const {
 		return _allocationSize;
 	}
 
-	inline u32 getAddedPacketsCount() const {
+	 u32 getAddedPacketsCount() const {
 		return _addedPacketsCount;
 	}
 

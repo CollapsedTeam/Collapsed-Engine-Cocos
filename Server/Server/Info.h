@@ -44,7 +44,7 @@ public:
 	 *
 	 * @param what
 	 */
-	inline void setWhat(cchar* what, ...) throw() {
+	void setWhat(cchar* what, ...) throw() {
 		char buffer[512];
 		va_list list;
 		va_start(list, what);
@@ -57,7 +57,7 @@ public:
 	 * 
 	 * @return 
 	 */
-	inline cchar* getWhat() const throw() {
+	cchar* getWhat() const throw() {
 		return _what.c_str(); 
 	}
 
@@ -66,7 +66,7 @@ protected:
 	 * 
 	 * @param what
 	 */
-	inline void setWhat(cchar* what, va_list list) throw() {
+	void setWhat(cchar* what, va_list list) throw() {
 		char buffer[512];
 		vsprintf(buffer, what, list);
 		_what = buffer;

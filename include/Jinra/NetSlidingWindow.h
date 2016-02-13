@@ -58,7 +58,7 @@ public:
 	 */
 	DatagramSequenceNumberType getAndIncrementNextDatagramSequenceNumber();
 
-	inline DatagramSequenceNumberType getNextDatagramSequenceNumber() const {
+	 DatagramSequenceNumberType getNextDatagramSequenceNumber() const {
 		return _nextDatagramSequenceNumber;
 	}
 
@@ -100,7 +100,7 @@ public:
 	 */
 	void onSendAck();
 
-	inline bool isInSlowStart() const {
+	 bool isInSlowStart() const {
 		return (_cwnd <= _ssThresh || _ssThresh == 0.0);
 	}
 
@@ -120,18 +120,18 @@ public:
 	/** 
 	 * Return what was set by setMTU()
 	 */
-	inline u32 getMTU() const {
+	 u32 getMTU() const {
 		return _maxMTUIncludingUPDHeader;
 	}
 
 	/** 
 	 * Query for statistics
 	 */
-	inline double getRTT() const {
+	 double getRTT() const {
 		return (_lastRtt == _UNSET_TIME_US) ? 0.0 : _lastRtt;
 	}
 
-	inline s32 getRetransmissionBandwidth(u32 unacknowledgedBytes) const {
+	 s32 getRetransmissionBandwidth(u32 unacknowledgedBytes) const {
 		return unacknowledgedBytes;
 	}
 	

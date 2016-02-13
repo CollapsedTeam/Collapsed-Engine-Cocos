@@ -32,19 +32,19 @@ public:
 
 	NetGUID& operator=(const NetGUID& guid);
 
-	inline bool operator==(const NetGUID& guid) const {
+	 bool operator==(const NetGUID& guid) const {
 		return (id == guid.id);
 	}
 
-	inline bool operator!=(const NetGUID& guid) const {
+	 bool operator!=(const NetGUID& guid) const {
 		return (id != guid.id);
 	}
 
-	inline bool operator>(const NetGUID& guid) const {
+	 bool operator>(const NetGUID& guid) const {
 		return (id > guid.id);
 	}
 
-	inline bool operator<(const NetGUID& guid) const {
+	 bool operator<(const NetGUID& guid) const {
 		return (id < guid.id);
 	}
 

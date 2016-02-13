@@ -31,7 +31,7 @@ public:
 
 	void update(Character* character, const String& id);
 
-	inline u32 getID() const {
+	u32 getID() const {
 		return _id;
 	}
 

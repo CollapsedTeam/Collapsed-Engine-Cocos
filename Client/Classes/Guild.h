@@ -38,11 +38,11 @@ public:
 
 	void setLanguage() override;
 
-	inline void setName(const SString& name) {
+	void setName(const SString& name) {
 		GET_CHILD(_main, "lblName", Text)->setString(name);
 	}
 
-	inline void setDescription(const SString& description) {
+	void setDescription(const SString& description) {
 		GET_CHILD(_main, "lblDesc", Text)->setString(description);
 	}
 

@@ -25,11 +25,11 @@ public:
 
 	void clearExpired(TimeUS time);
 
-	inline u64 getBPS() const { 
+	 u64 getBPS() const { 
 		return _lastSec; 
 	}
 	
-	inline u64 getTotal() const {
+	 u64 getTotal() const {
 		return _total; 
 	}
 

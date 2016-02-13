@@ -28,77 +28,77 @@ public:
 		: x(x), y(y)
 	{ }
 
-	inline double distance(Type x, Type y) { 
+	double distance(Type x, Type y) { 
 		return sqrt(static_cast<double>((this->x - x) * (this->x - x)) + 
 					static_cast<double>((this->y - y) * (this->y - y))); 
 	}
 
-	inline double distance(const PoinT& point) { 
+	double distance(const PoinT& point) { 
 		return distance(point.x, point.y); 
 	}
 
-	inline PoinT<s32> toPoint() {
+	PoinT<s32> toPoint() {
 		return PoinT<s32>(static_cast<s32>(x), static_cast<s32>(y));
 	}
 
-	inline void set(Type x, Type y) { 
+	void set(Type x, Type y) { 
 		this->x = x;
 		this->y = y;
 	}
 
 public:
-	inline void operator=(const PoinT& point) { 
+	void operator=(const PoinT& point) { 
 		x = point.x; 
 		y = point.y; 
 	}
 
-	inline bool operator==(const PoinT& point) const { 
+	bool operator==(const PoinT& point) const { 
 		return (x == point.x && y == point.y); 
 	}
 
-	inline bool operator!=(const PoinT& point) const { 
+	bool operator!=(const PoinT& point) const { 
 		return (x != point.x || y != point.y); 
 	}
 
-	inline PoinT operator+(const PoinT& point) const { 
+	PoinT operator+(const PoinT& point) const { 
 		return PoinT(x + point.x, y + point.y); 
 	}
 
-	inline PoinT operator-(const PoinT& point) const { 
+	PoinT operator-(const PoinT& point) const { 
 		return PoinT(x - point.x, y - point.y); 
 	}
 
-	inline PoinT& operator+=(const PoinT& point) {
+	PoinT& operator+=(const PoinT& point) {
 		x += point.x;
 		y += point.y;
 		return *this;
 	}
 
-	inline PoinT& operator-=(const PoinT& point) {
+	PoinT& operator-=(const PoinT& point) {
 		x -= point.x;
 		y -= point.y;
 		return *this;
 	}
 
 	template <class T>
-	inline PoinT operator+(const T& value) const { 
+	PoinT operator+(const T& value) const { 
 		return PoinT(x + value, y + value); 
 	}
 	
 	template <class T>
-	inline PoinT operator-(const T& value) const { 
+	PoinT operator-(const T& value) const { 
 		return PoinT(x - value, y - value); 
 	}
 
 	template <class T>
-	inline PoinT& operator+=(const T& value) {
+	PoinT& operator+=(const T& value) {
 		x += value;
 		y += value;
 		return *this;
 	}
 
 	template <class T>
-	inline PoinT& operator-=(const T& value) {
+	PoinT& operator-=(const T& value) {
 		x -= value;
 		y -= value;
 		return *this;

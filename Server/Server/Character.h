@@ -73,7 +73,7 @@ public:
 	 * 
 	 * @return
 	 */
-	inline bool isBelongsToGuild() const {
+	bool isBelongsToGuild() const {
 		return (_guild != nullptr);
 	}
 
@@ -81,7 +81,7 @@ public:
 	 *
 	 * @return
 	 */
-	inline Client* getClient() const {
+	Client* getClient() const {
 		return _client;
 	}
 
@@ -89,7 +89,7 @@ public:
 	 * 
 	 * @return
 	 */
-	inline Class* getClass() const {
+	Class* getClass() const {
 		return _class;
 	}
 
@@ -97,23 +97,23 @@ public:
 	 * 
 	 * @return
 	 */
-	inline Guild* getGuild() const {
+	Guild* getGuild() const {
 		return _guild;
 	}
 
-	inline Dialogue* getDialogue() const {
+	Dialogue* getDialogue() const {
 		return _dialogue;
 	}
 
-	inline u8 getFlag(u32 index) {
+	u8 getFlag(u32 index) {
 		return _dialoguesFlags[index];
 	}
 
-	inline u8 getSavableFlag(Dialogue* dialogue, u32 index) {
+	u8 getSavableFlag(Dialogue* dialogue, u32 index) {
 		return _savableDialoguesFlags[dialogue->getID()][index];
 	}
 
-	inline QueriesQueue* getQueriesQueue() {
+	QueriesQueue* getQueriesQueue() {
 		return &_queriesQueue;
 	}
 
@@ -121,15 +121,15 @@ public:
 	 * 
 	 * @param guild
 	 */
-	inline void setGuild(Guild* guild) {
+	void setGuild(Guild* guild) {
 		_guild = guild;
 	}
 	
-	inline void setDialogue(Dialogue* dialogue) {
+	void setDialogue(Dialogue* dialogue) {
 		_dialogue = dialogue;
 	}
 
-	inline void setFlag(u32 index, u8 value) {
+	void setFlag(u32 index, u8 value) {
 		_dialoguesFlags[index] = value;
 	}
 

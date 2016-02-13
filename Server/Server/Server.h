@@ -61,57 +61,57 @@ public:
 
 	void releaseSocket();
 
-	inline ClassesMap* getClasses() {
+	ClassesMap* getClasses() {
 		return &_classes;
 	}
 
-	inline u8 getClassesCount() const {
+	u8 getClassesCount() const {
 		return static_cast<u8>(_classes.size());
 	}
 
-	inline Class* getClass(u32 id) {
+	Class* getClass(u32 id) {
 		return (_classes.find(id) != _classes.end()) ? _classes[id] : nullptr;
 	}
 
-	inline ClientsMap* getClients() {
+	ClientsMap* getClients() {
 		return &_clients;
 	}
 
-	inline Client* getClient(const NetGUID &guid) {
+	Client* getClient(const NetGUID &guid) {
 		return (_clients.find(guid) != _clients.end()) ? _clients[guid] : nullptr;
 	}
 
 	Client* getClient(const String& email);
 
-	inline CharactersMap* getCharacters() {
+	CharactersMap* getCharacters() {
 		return &_characters;
 	}
 
-	inline Character* getCharacter(u32 id) {
+	Character* getCharacter(u32 id) {
 		return (_characters.find(id) != _characters.end()) ? _characters[id] : nullptr;
 	}
 
 	Character* getCharacter(const String& name);
 
-	inline GuildsMap* getGuilds() {
+	GuildsMap* getGuilds() {
 		return &_guilds;
 	}
 
-	inline Guild* getGuild(u32 id) {
+	Guild* getGuild(u32 id) {
 		return (_guilds.find(id) != _guilds.end()) ? _guilds[id] : nullptr;
 	}
 
 	Guild* getGuild(const String& name);
 
-	inline DialoguesMap* getDialogues() {
+	DialoguesMap* getDialogues() {
 		return &_dialogues;
 	}
 
-	inline Dialogue* getDialogue(u32 id) {
+	Dialogue* getDialogue(u32 id) {
 		return (_dialogues.find(id) != _dialogues.end()) ? _dialogues[id] : nullptr;
 	}
 
-	inline LoopCounter* getLoopCounter() {
+	LoopCounter* getLoopCounter() {
 		return &_loopCounter;
 	}
 

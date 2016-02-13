@@ -217,14 +217,14 @@ namespace DataStructures
 
 
 	template <class CircularLinkedListType>
-		inline void CircularLinkedList<CircularLinkedListType>::beginning( void )
+		 void CircularLinkedList<CircularLinkedListType>::beginning( void )
 	{
 		if ( this->root )
 			this->position = this->root;
 	}
 
 	template <class CircularLinkedListType>
-		inline void CircularLinkedList<CircularLinkedListType>::end( void )
+		 void CircularLinkedList<CircularLinkedListType>::end( void )
 	{
 		if ( this->root )
 			this->position = this->root->previous;
@@ -719,7 +719,7 @@ namespace DataStructures
 	}
 
 	template <class CircularLinkedListType>
-		inline void CircularLinkedList<CircularLinkedListType>::Replace( const CircularLinkedListType& input )
+		 void CircularLinkedList<CircularLinkedListType>::Replace( const CircularLinkedListType& input )
 	{
 		if ( this->list_size > 0 )
 			// *(position->item)=input;
@@ -821,13 +821,13 @@ namespace DataStructures
 	}
 
 	template <class CircularLinkedListType>
-		inline u32 CircularLinkedList<CircularLinkedListType>::size()
+		 u32 CircularLinkedList<CircularLinkedListType>::size()
 	{
 		return this->list_size;
 	}
 
 	template <class CircularLinkedListType>
-		inline CircularLinkedListType& CircularLinkedList<CircularLinkedListType>::peek()
+		 CircularLinkedListType& CircularLinkedList<CircularLinkedListType>::peek()
 	{
 		// return *(position->item);
 		return this->position->item;
@@ -932,7 +932,7 @@ namespace DataStructures
 	}
 
 	template <class CircularLinkedListType>
-		inline void CircularLinkedList<CircularLinkedListType>::Concatenate( const CircularLinkedList<CircularLinkedListType>& L )
+		 void CircularLinkedList<CircularLinkedListType>::Concatenate( const CircularLinkedList<CircularLinkedListType>& L )
 	{
 		u32 counter;
 		node* ptr;
@@ -961,7 +961,7 @@ namespace DataStructures
 	}
 
 	template <class CircularLinkedListType>
-		inline void CircularLinkedList<CircularLinkedListType>::Sort( void )
+		 void CircularLinkedList<CircularLinkedListType>::Sort( void )
 	{
 		if ( this->list_size <= 1 )
 			return ;

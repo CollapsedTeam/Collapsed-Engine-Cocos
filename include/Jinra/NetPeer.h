@@ -106,13 +106,13 @@ public:
 	/// 
 	/// Defaults to 0, meaning by default, nobody can connect to you
 	/// \param[in] numberAllowed Maximum number of incoming connections allowed.
-	inline void setMaximumIncomingConnections(u32 numberAllowed) {
+	 void setMaximumIncomingConnections(u32 numberAllowed) {
 		maximumIncomingConnections = numberAllowed;
 	}
 
 	/// \brief Returns the value passed to SetMaximumIncomingConnections().
 	/// \return Maximum number of incoming connections, which is always <= maxConnections
-	inline u32 getMaximumIncomingConnections() const {
+	 u32 getMaximumIncomingConnections() const {
 		return maximumIncomingConnections;
 	}
 
@@ -189,7 +189,7 @@ public:
 
 	/// \brief Returns true if the network thread is running.
 	/// \return True if the network thread is running, False otherwise
-	inline bool isActive() const {
+	 bool isActive() const {
 		return endThreads == false;
 	}
 
@@ -287,7 +287,7 @@ public:
 
 	/// \brief Return the total number of connections we are allowed.
 	/// \return Total number of connections allowed.
-	inline u32 getMaximumNumberOfPeers() const {
+	 u32 getMaximumNumberOfPeers() const {
 		return maximumNumberOfPeers;
 	}
 
@@ -432,7 +432,7 @@ public:
 	SystemAddress GetExternalID( const SystemAddress target ) const;
 
 	/// Return my own GUID
-	inline const NetGUID getMyGUID() const {
+	 const NetGUID getMyGUID() const {
 		return myGuid;
 	}
 
@@ -513,7 +513,7 @@ public:
 
 	/// \brief Returns what was passed to SetSplitMessageProgressInterval().
 	/// \return Number of messages to be recieved before a download progress notification is returned. Default to 0.
-	inline s32 GetSplitMessageProgressInterval() const {
+	s32 GetSplitMessageProgressInterval() const {
 		return splitMessageProgressInterval;
 	}
 
@@ -569,7 +569,7 @@ public:
 	/// Return true from the callback to have NetPeer handle the datagram. Return false and NetPeer will ignore the datagram.
 	/// This can be used to filter incoming datagrams by system, or to share a recvfrom socket with NetPeer
 	/// NetSocket2::RecvStruct will only remain valid for the duration of the call
-	virtual inline void setIncomingDatagramEventHandler(
+	virtual  void setIncomingDatagramEventHandler(
 		bool (*_incomingDatagramEventHandler)(NetSocket2::RecvStruct*)) { 
 		incomingDatagramEventHandler = _incomingDatagramEventHandler;
 	}
@@ -589,7 +589,7 @@ public:
 	/// This limit does not apply to the sum of all connections!
 	/// Exceeding the limit queues up outgoing traffic
 	/// \param[in] maxBitsPerSecond Maximum bits per second to send.  Use 0 for unlimited (default). Once set, it takes effect immedately and persists until called again.
-	virtual inline void setPerConnectionOutgoingBandwidthLimit(u32 maxBitsPerSecond) {
+	virtual void setPerConnectionOutgoingBandwidthLimit(u32 maxBitsPerSecond) {
 		maxOutgoingBPS = maxBitsPerSecond;
 	}
 
@@ -631,8 +631,7 @@ public:
 
 	/// \internal
 	/// \brief Holds the clock differences between systems, along with the ping
-	struct PingAndClockDifferential
-	{
+	struct PingAndClockDifferential {
 		u16 pingTime;
 		Time clockDifferential;
 	};
@@ -673,8 +672,8 @@ protected:
 	friend void processNetworkPacket( const SystemAddress systemAddress, cchar *data, const int length, NetPeer *netPeer, Jinra::TimeUS timeRead, BitStream &updateBitStream );
 	friend void processNetworkPacket( const SystemAddress systemAddress, cchar *data, const int length, NetPeer *netPeer, NetSocket2* netSocket, Jinra::TimeUS timeRead, BitStream &updateBitStream );
 
-	int GetIndexFromSystemAddress( const SystemAddress systemAddress, bool calledFromNetworkThread ) const;
-	int GetIndexFromGuid( const NetGUID guid );
+	s32 GetIndexFromSystemAddress(const SystemAddress systemAddress, bool calledFromNetworkThread ) const;
+	s32 GetIndexFromGuid(const NetGUID guid);
 
 	//void RemoveFromRequestedConnectionsList( const SystemAddress systemAddress );
 	// Two versions needed because some buggy compilers strip the last parameter if unused, and crashes
@@ -726,7 +725,7 @@ protected:
 
 	bool IsLoopbackAddress(const AddressOrGUID &systemIdentifier, bool matchPort) const;
 
-	inline SystemAddress getLoopbackAddress() const {
+	SystemAddress getLoopbackAddress() const {
 		return ipList[0];
 	}
 
@@ -795,10 +794,9 @@ protected:
 	u32 validationInteger;
 	std::mutex incomingQueueMutex, banListMutex; 
 
-	struct BanStruct
-	{
-		char *IP;
-		Jinra::TimeMS timeout; // 0 for none
+	struct BanStruct {
+		char* IP;
+		TimeMS timeout; // 0 for none
 	};
 
 	struct RequestedConnectionStruct

@@ -44,19 +44,19 @@ public:
 
 	void removeInvite(u32 recipientID);
 
-	inline u32 getID() const {
+	u32 getID() const {
 		return _id;
 	}
 
-	inline cchar* getName() const {
+	cchar* getName() const {
 		return _name.c_str();
 	}
 
-	inline std::vector<GuildMember>* getMembers() {
+	std::vector<GuildMember>* getMembers() {
 		return &_members;
 	}
 
-	inline u16 getMembersCount() {
+	u16 getMembersCount() {
 		return static_cast<u16>(_members.size());
 	}
 
@@ -68,21 +68,21 @@ public:
 
 	GuildMember* getMember(const String& memberName);
 
-	inline u32 getInvitesCount() const {
+	u32 getInvitesCount() const {
 		return _invites.size();
 	}
 
 	Character* getSenderOfInvite(u32 inviteID);
 
-	inline QueriesQueue* getQueriesQueue() {
+	QueriesQueue* getQueriesQueue() {
 		return &_queriesQueue;
 	}
 
-	inline void setID(u32 id) {
+	void setID(u32 id) {
 		_id = id;
 	}
 
-	inline void setName(const String& name) {
+	void setName(const String& name) {
 		_name = name;
 	}
 

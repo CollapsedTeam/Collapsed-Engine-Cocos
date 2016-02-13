@@ -30,7 +30,7 @@ public:
 	 */
 	void collectGarbage();
 
-	inline cchar* getFileName() const {
+	cchar* getFileName() const {
 		return _fileName.c_str();
 	}
 

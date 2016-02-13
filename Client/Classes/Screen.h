@@ -21,14 +21,14 @@ class Screen : public Layer
 public:
 	Screen();
 
-	inline Scene* getScene() const override {
+	Scene* getScene() const override {
 		return _scene;
 	}
 
 	virtual void setLanguage() = 0;
 
 protected:
-	inline void setScene(Node* scene){
+	void setScene(Node* scene){
 		_scene = static_cast<Scene*>(scene);
 	}
 

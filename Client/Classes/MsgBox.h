@@ -49,15 +49,15 @@ public:
 
 	void setTextOfRightButton(const SString& text);
 
-	inline void setClickEventOfLeftButton(const std::function<void(Ref*)>& function) {
+	void setClickEventOfLeftButton(const std::function<void(Ref*)>& function) {
 		GET_CHILD(_main, "btnL", Button)->addClickEventListener(function);
 	}
 
-	inline void setClickEventOfMiddleButton(const std::function<void(Ref*)>& function) {
+	void setClickEventOfMiddleButton(const std::function<void(Ref*)>& function) {
 		GET_CHILD(_main, "btnM", Button)->addClickEventListener(function);
 	}
 
-	inline void setClickEventOfRightButton(const std::function<void(Ref*)>& function) {
+	void setClickEventOfRightButton(const std::function<void(Ref*)>& function) {
 		GET_CHILD(_main, "btnR", Button)->addClickEventListener(function);
 	}
 

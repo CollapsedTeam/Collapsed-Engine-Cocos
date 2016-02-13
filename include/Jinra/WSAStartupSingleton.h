@@ -13,7 +13,7 @@ public:
 	 */
 	static void release();
 
-	static inline bool isInitialized() {
+	static  bool isInitialized() {
 		return _initialized;
 	}
 

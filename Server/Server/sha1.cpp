@@ -41,13 +41,13 @@ namespace // local
 {
 
 // Rotate an integer value to left.
-inline const unsigned int rol(const unsigned int value, const unsigned int steps) {
+const unsigned int rol(const unsigned int value, const unsigned int steps) {
     return ((value << steps) | (value >> (32 - steps)));
 }
 
 // Sets the first 16 integers in the buffert to zero.
 // Used for clearing the W buffert.
-inline void clearWBuffert(unsigned int* buffert)
+void clearWBuffert(unsigned int* buffert)
 {
     for (int pos = 16; --pos >= 0;)
         buffert[pos] = 0;

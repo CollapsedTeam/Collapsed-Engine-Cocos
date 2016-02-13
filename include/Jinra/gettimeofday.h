@@ -24,7 +24,7 @@ struct timezone
  
 void  GetSystemTimeAsFileTime(FILETIME*);
  
-inline int gettimeofday(struct timeval* p, void* tz )
+ int gettimeofday(struct timeval* p, void* tz )
 {
 	union {
 	    long long ns100; // time since 1 Jan 1601 in 100ns units

@@ -24,7 +24,7 @@ public:
 	
 	virtual ~Character();
 
-	inline Shared::Guild* getGuild() const {
+	Shared::Guild* getGuild() const {
 		return _guild;
 	}
 

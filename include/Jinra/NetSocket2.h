@@ -62,31 +62,31 @@ public:
 
 	virtual RNS2SendResult send(NetSocket2::SendParameters* sendParameters) = 0;
 	
-	inline bool isBerkleySocket() const {
+	 bool isBerkleySocket() const {
 		return (_socketType != Type::OTHER);
 	}
 
-	inline Type getSocketType() const {
+	 Type getSocketType() const {
 		return _socketType;
 	}
 
-	inline SystemAddress getBoundAddress() const { 
+	 SystemAddress getBoundAddress() const { 
 		return _boundAddress; 
 	}
 
-	inline u32 getUserConnectionSocketIndex() const { 
+	 u32 getUserConnectionSocketIndex() const { 
 		return _userConnectionSocketIndex; 
 	}
 
-	inline RNS2EventHandler* getEventHandler() const { 
+	 RNS2EventHandler* getEventHandler() const { 
 		return _eventHandler; 
 	}
 
-	inline void setSocketType(Type type) {
+	 void setSocketType(Type type) {
 		_socketType = type;
 	}
 
-	inline void setUserConnectionSocketIndex(u32 index) {
+	 void setUserConnectionSocketIndex(u32 index) {
 		_userConnectionSocketIndex = index; 
 	}
 
@@ -94,7 +94,7 @@ public:
 	 * In order for the handler to trigger, some platforms must call PollRecvFrom, some 
 	 * platforms this create an internal thread.
 	 */
-	inline void setRecvEventHandler(RNS2EventHandler* eventHandler) {
+	 void setRecvEventHandler(RNS2EventHandler* eventHandler) {
 		_eventHandler = eventHandler;
 	}
 

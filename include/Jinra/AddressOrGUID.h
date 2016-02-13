@@ -27,11 +27,11 @@ public:
 
 	static unsigned long toInteger(const AddressOrGUID& aog);
 
-	inline bool isUndefined() const { 
+	 bool isUndefined() const { 
 		return (guid == UNASSIGNED_NET_GUID && address == UNASSIGNED_SYSTEM_ADDRESS); 
 	}
 
-	inline SystemIndex getSystemIndex() const { 
+	 SystemIndex getSystemIndex() const { 
 		return (guid != UNASSIGNED_NET_GUID) ? guid.systemIndex : address.systemIndex;
 	}
 
@@ -43,7 +43,7 @@ public:
 
 	AddressOrGUID& operator=(const NetGUID& input);
 
-	inline bool operator==(const AddressOrGUID& right) const { 
+	 bool operator==(const AddressOrGUID& right) const { 
 		return ((guid != UNASSIGNED_NET_GUID && guid == right.guid) || 
 				(address != UNASSIGNED_SYSTEM_ADDRESS && address == right.address)); 
 	}

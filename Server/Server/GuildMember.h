@@ -41,19 +41,19 @@ public:
 
 	void degrade();
 
-	inline bool isOnline() const {
+	bool isOnline() const {
 		return (_onlineCharacter != nullptr);
 	}
 
-	inline bool isOwner() const {
+	bool isOwner() const {
 		return (_rank == Shared::GuildRanks::OWNER);
 	}
 
-	inline bool isManager() const {
+	bool isManager() const {
 		return (_rank == Shared::GuildRanks::MANAGER);
 	}
 
-	inline Character* getOnlineCharacter() const {
+	Character* getOnlineCharacter() const {
 		return _onlineCharacter;
 	}
 
@@ -61,15 +61,15 @@ public:
 
 	u16 getLevel() const;
 
-	inline Shared::GuildRanks getRank() const {
+	Shared::GuildRanks getRank() const {
 		return _rank;
 	}
 
-	inline cchar* getNote() const {
+	cchar* getNote() const {
 		return _note.c_str();
 	}
 
-	inline QueriesQueue* getQueriesQueue() {
+	QueriesQueue* getQueriesQueue() {
 		return &_queriesQueue;
 	}
 

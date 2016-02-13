@@ -164,36 +164,36 @@ public:
 	/// \attention
 	/// \details Dangerous if you don't know what you are doing!
 	/// For efficiency reasons you can only write mid-stream if your data is byte aligned.
-	inline void setWriteOffset(const BitSize_t offset) {
+	 void setWriteOffset(const BitSize_t offset) {
 		_numberOfBitsUsed = offset;
 	}
 
 	/// \brief Returns the length in bits of the stream
-	inline BitSize_t getNumberOfBitsUsed() const {
+	 BitSize_t getNumberOfBitsUsed() const {
 		return getWriteOffset();
 	}
 
-	inline BitSize_t getWriteOffset() const {
+	 BitSize_t getWriteOffset() const {
 		return _numberOfBitsUsed;
 	}
 
 	/// \brief Returns the length in bytes of the stream
-	inline BitSize_t getNumberOfBytesUsed() const {
+	 BitSize_t getNumberOfBytesUsed() const {
 		return BITS_TO_BYTES(_numberOfBitsUsed);
 	}
 
 	/// \brief Returns the number of bits into the stream that we have read
-	inline BitSize_t getReadOffset() const {
+	 BitSize_t getReadOffset() const {
 		return _readOffset;
 	}
 
 	/// \brief Sets the read bit index
-	inline void setReadOffset(const BitSize_t newReadOffset) {
+	 void setReadOffset(const BitSize_t newReadOffset) {
 		_readOffset = newReadOffset;
 	}
 
 	/// \brief Returns the number of bits left in the stream that haven't been read
-	inline BitSize_t getNumberOfUnreadBits() const {
+	 BitSize_t getNumberOfUnreadBits() const {
 		return _numberOfBitsUsed - _readOffset;
 	}
 
@@ -210,7 +210,7 @@ public:
 	/// Gets the data that BitStream is writing to / reading from.
 	/// Partial bytes are left aligned.
 	/// \return A pointer to the internal state
-	inline u8* getData() const {
+	 u8* getData() const {
 		return _data;
 	}
 
@@ -270,14 +270,14 @@ public:
 	/// can also be used to force coalesced bitstreams to start on byte
 	/// boundaries so so WriteAlignedBits and ReadAlignedBits both
 	/// calculate the same offset when aligning.
-	inline void alignWriteToByteBoundary() {_numberOfBitsUsed += 8 - ( (( _numberOfBitsUsed - 1 ) & 7) + 1 );}
+	 void alignWriteToByteBoundary() {_numberOfBitsUsed += 8 - ( (( _numberOfBitsUsed - 1 ) & 7) + 1 );}
 
 	/// \brief Align the next write and/or read to a byte boundary.  
 	/// \details This can be used to 'waste' bits to byte align for efficiency reasons It
 	/// can also be used to force coalesced bitstreams to start on byte
 	/// boundaries so so WriteAlignedBits and ReadAlignedBits both
 	/// calculate the same offset when aligning.
-	inline void AlignReadToByteBoundary() {_readOffset += 8 - ( (( _readOffset - 1 ) & 7 ) + 1 );}
+	 void AlignReadToByteBoundary() {_readOffset += 8 - ( (( _readOffset - 1 ) & 7 ) + 1 );}
 
 	/// \brief Read \a numberOfBitsToRead bits to the output source.
 	/// \details alignBitsToRight should be set to true to convert internal
@@ -312,7 +312,7 @@ public:
 
 	/// \internal
 	/// \return How many bits have been allocated internally
-	inline BitSize_t getNumberOfBitsAllocated() const {
+	 BitSize_t getNumberOfBitsAllocated() const {
 		return _numberOfBitsAllocated;
 	}
 
@@ -343,21 +343,21 @@ public:
 	/// \internal Unrolled inner loop, for when performance is critical
 	bool ReadAlignedVar32(char *inOutByteArray);
 
-	inline void write(const SString& inStringVar)
+	 void write(const SString& inStringVar)
 	{
 		auto length = static_cast<u16>(inStringVar.length());
 		write(length);
 		writeAlignedBytes((const u8*)inStringVar.c_str(), (const u32)length);
 	}
 
-	inline void write(cchar* const inStringVar)
+	 void write(cchar* const inStringVar)
 	{
 		auto length = static_cast<u16>(strlen(inStringVar));
 		write(length);
 		writeAlignedBytes((const u8*)inStringVar, (const u32)length);
 	}
 
-	inline void write(const wchar_t* const inStringVar)
+	 void write(const wchar_t* const inStringVar)
 	{
 #if 0
 		char *multiByteBuffer;
@@ -378,39 +378,39 @@ public:
 #endif
 	}
 	
-	inline void write(const u8* const inTemplateVar) {
+	 void write(const u8* const inTemplateVar) {
 		write((cchar*)inTemplateVar);
 	}
 
-	inline void write(char* const inTemplateVar) {
+	 void write(char* const inTemplateVar) {
 		write((cchar*)inTemplateVar);
 	}
 
-	inline void write(u8* const inTemplateVar) {
+	 void write(u8* const inTemplateVar) {
 		write((cchar*)inTemplateVar);
 	}
 
-	inline void writeCompressed(cchar* const inStringVar) {
+	 void writeCompressed(cchar* const inStringVar) {
 		StringCompressor::getInstance()->encodeString(inStringVar, 0xFFFF, this, 0);
 	}
 
-	inline void writeCompressed(const wchar_t* const inStringVar) {
+	 void writeCompressed(const wchar_t* const inStringVar) {
 		write(inStringVar);
 	}
 
-	inline void writeCompressed(const u8* const inTemplateVar) {
+	 void writeCompressed(const u8* const inTemplateVar) {
 		writeCompressed((cchar*) inTemplateVar);
 	}
 
-	inline void writeCompressed(char* const inTemplateVar) {
+	 void writeCompressed(char* const inTemplateVar) {
 		writeCompressed((cchar*) inTemplateVar);
 	}
 
-	inline void writeCompressed(u8* const inTemplateVar) {
+	 void writeCompressed(u8* const inTemplateVar) {
 		writeCompressed((cchar*) inTemplateVar);
 	}
 
-	inline static bool doEndianSwap() {
+	 static bool doEndianSwap() {
 #ifndef __BITSTREAM_NATIVE_END
 		return !isNetworkOrder();
 #else
@@ -418,7 +418,7 @@ public:
 #endif
 	}
 
-	inline static bool isBigEndian() {
+	 static bool isBigEndian() {
 		return isNetworkOrder();
 	}
 
@@ -453,7 +453,7 @@ private:
 };
 
 template <class templateType>
-	inline void BitStream::write(const templateType &inTemplateVar)
+inline void BitStream::write(const templateType &inTemplateVar)
 {
 	if (sizeof(inTemplateVar) == 1) {
 		writeBits((u8*)&inTemplateVar, sizeof(templateType) * 8, true);
@@ -502,7 +502,7 @@ inline void BitStream::write(const bool &inTemplateVar) {
 /// \brief Write a systemAddress to a bitstream.
 /// \param[in] inTemplateVar The value to write
 template <>
-	inline void BitStream::write(const SystemAddress &inTemplateVar)
+inline void BitStream::write(const SystemAddress &inTemplateVar)
 {
 	write(inTemplateVar.getIPVersion());
 	if (inTemplateVar.getIPVersion() == 4)
@@ -587,7 +587,7 @@ inline void BitStream::write(u8* const &inTemplateVar) {
 /// If you are not using __BITSTREAM_NATIVE_END the opposite is true for types larger than 1 byte
 /// \param[in] inTemplateVar The value to write
 template <class templateType>
-	inline void BitStream::writeCompressed(const templateType &inTemplateVar)
+inline void BitStream::writeCompressed(const templateType &inTemplateVar)
 {
 	if (sizeof(inTemplateVar)==1)
 		writeCompressed( ( u8* ) & inTemplateVar, sizeof( templateType ) * 8, true );
@@ -848,7 +848,7 @@ inline bool BitStream::read(wchar_t *&varString)
 	return true;
 }
 template <>
-	inline bool BitStream::read(u8 *&varString)
+inline bool BitStream::read(u8 *&varString)
 {
 	bool b;
 	u16 l;

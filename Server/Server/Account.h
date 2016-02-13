@@ -49,7 +49,7 @@ public:
 	 * 
 	 * @return
 	 */
-	inline bool isPlaying() const {
+	bool isPlaying() const {
 		return (_character != nullptr);
 	}
 
@@ -57,7 +57,7 @@ public:
 	 *
 	 * @return 
 	 */
-	inline u32 getID() const {
+	u32 getID() const {
 		return _id;
 	}
 
@@ -65,7 +65,7 @@ public:
 	 * 
 	 * @return 
 	 */
-	inline cchar* getEmail() const {
+	cchar* getEmail() const {
 		return _email.c_str();
 	}
 
@@ -73,7 +73,7 @@ public:
 	 *
 	 * @return 
 	 */
-	inline Type getType() const {
+	Type getType() const {
 		return _type;
 	}
 
@@ -81,7 +81,7 @@ public:
 	 *
 	 * @return 
 	 */
-	inline Character* getCharacter() const {
+	Character* getCharacter() const {
 		return _character;
 	}
 
@@ -89,7 +89,7 @@ public:
 	 *
 	 * @param id
 	 */
-	inline void setID(u32 id) {
+	void setID(u32 id) {
 		_id = id;
 	}
 
@@ -97,7 +97,7 @@ public:
 	 * 
 	 * @param email
 	 */
-	inline void setEmail(const String& email) {
+	void setEmail(const String& email) {
 		_email = email;
 	}
 
@@ -105,7 +105,7 @@ public:
 	 *
 	 * @param type
 	 */
-	inline void setType(Type type) {
+	void setType(Type type) {
 		_type = type;
 	}
 
@@ -113,7 +113,7 @@ public:
 	 * 
 	 * @param character
 	 */
-	inline void setCharacter(Character* character) {
+	void setCharacter(Character* character) {
 		_character = character;
 	}
 

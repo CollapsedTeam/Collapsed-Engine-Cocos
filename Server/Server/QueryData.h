@@ -34,19 +34,19 @@ public:
 public:
 	QueryData(ID id, void* object, void* object2 = nullptr, void* object3 = nullptr);
 
-	inline ID getID() const {
+	ID getID() const {
 		return _id;
 	}
 
-	inline void* getObject() const {
+	void* getObject() const {
 		return _object;
 	}
 
-	inline void* getObject2() const {
+	void* getObject2() const {
 		return _object2;
 	}
 
-	inline void* getObject3() const {
+	void* getObject3() const {
 		return _object2;
 	}
 

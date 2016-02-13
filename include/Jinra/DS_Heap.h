@@ -175,13 +175,13 @@ data_type Heap<weight_type, data_type, isMaxHeap>::Pop(const unsigned startingIn
 }
 
 template  <class weight_type, class data_type, bool isMaxHeap>
-inline data_type Heap<weight_type, data_type, isMaxHeap>::Peek(const unsigned startingIndex) const
+ data_type Heap<weight_type, data_type, isMaxHeap>::Peek(const unsigned startingIndex) const
 {
 	return heap[startingIndex].data;
 }
 
 template  <class weight_type, class data_type, bool isMaxHeap>
-inline weight_type Heap<weight_type, data_type, isMaxHeap>::PeekWeight(const unsigned startingIndex) const
+ weight_type Heap<weight_type, data_type, isMaxHeap>::PeekWeight(const unsigned startingIndex) const
 {
 	return heap[startingIndex].weight;
 }
@@ -193,7 +193,7 @@ void Heap<weight_type, data_type, isMaxHeap>::clear()
 }
 
 template <class weight_type, class data_type, bool isMaxHeap>
-inline data_type& Heap<weight_type, data_type, isMaxHeap>::operator[] (const u32 position)
+ data_type& Heap<weight_type, data_type, isMaxHeap>::operator[] (const u32 position)
 {
 	return heap[position].data;
 }
@@ -204,19 +204,19 @@ unsigned Heap<weight_type, data_type, isMaxHeap>::size() const
 }
 
 template <class weight_type, class data_type, bool isMaxHeap>
-inline unsigned Heap<weight_type, data_type, isMaxHeap>::LeftChild(const unsigned i) const
+ unsigned Heap<weight_type, data_type, isMaxHeap>::LeftChild(const unsigned i) const
 {
 	return i * 2 + 1;
 }
 
 template <class weight_type, class data_type, bool isMaxHeap>
-inline unsigned Heap<weight_type, data_type, isMaxHeap>::RightChild(const unsigned i) const
+ unsigned Heap<weight_type, data_type, isMaxHeap>::RightChild(const unsigned i) const
 {
 	return i * 2 + 2;
 }
 
 template <class weight_type, class data_type, bool isMaxHeap>
-inline unsigned Heap<weight_type, data_type, isMaxHeap>::Parent(const unsigned i) const
+ unsigned Heap<weight_type, data_type, isMaxHeap>::Parent(const unsigned i) const
 {
 #ifdef JINRA_DEBUG
 	ASSERT(i != 0);

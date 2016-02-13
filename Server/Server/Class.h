@@ -43,7 +43,7 @@ public:
 	 * 
 	 * @return 
 	 */
-	inline u16 getStartCash() const {
+	u16 getStartCash() const {
 		return _startCash;
 	}
 

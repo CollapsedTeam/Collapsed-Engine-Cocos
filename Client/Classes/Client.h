@@ -35,19 +35,19 @@ public:
 	
 	void reactToSocketStartupResult(Jinra::NetPeer::StartupResult startupResult);
 
-	inline bool isLoginFileExist() {
+	bool isLoginFileExist() {
 		return FileUtils::getInstance()->isFileExist(getFullPathOfLoginFile());
 	}
 
-	inline Character* getCharacter() {
+	Character* getCharacter() {
 		return _character;
 	}
 
-	inline Options* getOptionsWindow() {
+	Options* getOptionsWindow() {
 		return &_options;
 	}
 
-	inline void setCharacter(Character* character) {
+	void setCharacter(Character* character) {
 		_character = character;
 	}
 

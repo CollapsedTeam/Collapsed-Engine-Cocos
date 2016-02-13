@@ -31,33 +31,33 @@ public:
 
 	void exit();
 
-	inline const Size& getResolution() {
+	const Size& getResolution() {
 		return _resolution;
 	}
 
-	inline bool getDisplayStats() const {
+	bool getDisplayStats() const {
 		return _displayStats;
 	}
 
-	inline Lang* getLang() {
+	Lang* getLang() {
 		return &_lang;
 	}
 
-	inline u8 getMusicVolume() const {
+	u8 getMusicVolume() const {
 		return _musicVolume;
 	}
 
-	inline u8 getSFXVolume() const {
+	u8 getSFXVolume() const {
 		return _sfxVolume;
 	}
 
-	inline Node* getSceneFromRunningScreen() {
+	Node* getSceneFromRunningScreen() {
 		return Director::getInstance()->getRunningScene()->getChildren().at(
 			1)->getChildByName("Scene");
 	}
 
 	template<typename ScreenType>
-	inline ScreenType* getCurrentScreen() {
+	ScreenType* getCurrentScreen() {
 		return static_cast<ScreenType*>(
 			Director::getInstance()->getRunningScene()->getChildren().at(1));
 	}

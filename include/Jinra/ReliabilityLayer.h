@@ -101,50 +101,50 @@ public:
 
 	/// Were you ever unable to deliver a packet despite retries?
 	/// \return true means the connection has been lost.  Otherwise not.
-	inline bool isDeadConnection() const {
+	bool isDeadConnection() const {
 		return deadConnection;
 	}
 
 	///Are we waiting for any data to be sent out or be processed by the player?
-	inline bool isOutgoingDataWaiting() const {
+	bool isOutgoingDataWaiting() const {
 		return (outgoingPacketBuffer.size() > 0) ?
 			true : (_statistics.messagesInResendBuffer != 0);
 	}
 
-	inline bool areAcksWaiting() const {
+	bool areAcksWaiting() const {
 		return _acknowlegements.size() > 0;
 	}
 
 	/// Returns the value passed to SetTimeoutTime. or the default if it was never called
 	/// \param[out] the value passed to SetTimeoutTime
-	inline TimeMS getTimeoutTime() const {
+	TimeMS getTimeoutTime() const {
 		return _timeoutTime;
 	}
 
-	inline TimeUS getNextSendTime() const {
+	TimeUS getNextSendTime() const {
 		return _nextSendTime;
 	}
 
-	inline TimeUS getTimeBetweenPackets() const {
+	TimeUS getTimeBetweenPackets() const {
 		return _timeBetweenPackets;
 	}
 
-	inline TimeMS getTimeLastDatagramArrived() const {
+	TimeMS getTimeLastDatagramArrived() const {
 		return timeLastDatagramArrived;
 	}
 
 	/// Set the time, in MS, to use before considering ourselves disconnected after not being able to deliver a reliable packet
 	/// Default time is 10,000 or 10 seconds in release and 30,000 or 30 seconds in debug.
 	/// \param[in] time Time, in MS
-	inline void setTimeoutTime(TimeMS time){
+	void setTimeoutTime(TimeMS time) {
 		_timeoutTime = time;
 	}
 
-	inline void setSplitMessageProgressInterval(s32 interval) {
+	void setSplitMessageProgressInterval(s32 interval) {
 		splitMessageProgressInterval = interval;
 	}
 
-	inline void setUnreliableTimeout(TimeMS timeoutMS) {
+	void setUnreliableTimeout(TimeMS timeoutMS) {
 		unreliableTimeout = static_cast<TimeUS>(timeoutMS * static_cast<TimeUS>(1000));
 	}
 
@@ -207,7 +207,7 @@ private:
 	void UpdateNextActionTime();
 
 	/// How many elements are waiting to be resent?
-	inline u32 getResendListDataSize() const {
+	u32 getResendListDataSize() const {
 		return _statistics.messagesInResendBuffer;
 	}
 
@@ -361,7 +361,7 @@ private:
 	void removeFromList(InternalPacket *internalPacket, bool modifyUnacknowledgedBytes);
 	void addToListTail(InternalPacket *internalPacket, bool modifyUnacknowledgedBytes);
 	void popListHead(bool modifyUnacknowledgedBytes);
-	inline bool isResendQueueEmpty() const {
+	 bool isResendQueueEmpty() const {
 		return (resendLinkedListHead == nullptr);
 	}
 	void SendACKs(NetSocket2 *s, SystemAddress &systemAddress, TimeUS time, BitStream &updateBitStream);
@@ -392,7 +392,7 @@ private:
 
 	u32 getMaxDatagramSizeExcludingMessageHeaderBytes() const;
 
-	inline BitSize_t GetMaxDatagramSizeExcludingMessageHeaderBits() const {
+	 BitSize_t GetMaxDatagramSizeExcludingMessageHeaderBits() const {
 		return BYTES_TO_BITS(getMaxDatagramSizeExcludingMessageHeaderBytes());
 	}
 

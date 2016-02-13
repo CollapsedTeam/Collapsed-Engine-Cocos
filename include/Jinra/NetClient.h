@@ -24,7 +24,7 @@ public:
 
 	void shutdown(u32 waitTime);
 
-	inline NetPeer* getPeer() const {
+	NetPeer* getPeer() const {
 		return _peer;
 	}
 

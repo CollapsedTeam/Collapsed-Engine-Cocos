@@ -27,27 +27,27 @@ public:
 
 	static Scene* createScene();
 
-	inline Chat* getChat() {
+	Chat* getChat() {
 		return &_chat;
 	}
 
-	static inline Statistics* getStatisticsWindow() {
+	static Statistics* getStatisticsWindow() {
 		return &_statistics;
 	}
 
-	static inline Guild* getGuildWindow() {
+	static Guild* getGuildWindow() {
 		return &_guild;
 	}
 
-	static inline GuildCreation* getGuildCreationWindow() {
+	static GuildCreation* getGuildCreationWindow() {
 		return &_guildCreation;
 	}
 
-	static inline GuildSettings* getGuildSettingsWindow() {
+	static GuildSettings* getGuildSettingsWindow() {
 		return &_guildSettings;
 	}
 
-	static inline GuildAddMember* getGuildAddMemberWindow() {
+	static GuildAddMember* getGuildAddMemberWindow() {
 		return &_guildAddMember;
 	}
 

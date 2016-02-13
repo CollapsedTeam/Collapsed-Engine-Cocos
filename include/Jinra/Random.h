@@ -9,7 +9,7 @@ public:
 	/**
 	 * Initializes basic seed for random generation.
 	 */
-	static inline void initSeed() {
+	static  void initSeed() {
 #if defined(_WIN32)
 		srand(static_cast<u32>(time(0)));
 #else
@@ -21,14 +21,14 @@ public:
 	 * Initializes specified seed for random generation.
 	 * @param seed The seed for random generation.
 	 */
-	static inline void initSeed(u32 seed) {
+	static  void initSeed(u32 seed) {
 		srand(seed);
 	}
 
 	/**
 	 * Generates integer.
 	 */
-	static inline s32 generateInt() {
+	static  s32 generateInt() {
 		return rand();
 	}
 
@@ -37,14 +37,14 @@ public:
 	 * @param min The minimal value of interval.
 	 * @param max The maximal value of interval.
 	 */
-	static inline s32 generateInt(s32 min, s32 max) {
+	static  s32 generateInt(s32 min, s32 max) {
 		return (rand() % (max - min + 1)) + min;
 	}
 
 	/**
 	 * Generates float.
 	 */
-	static inline float generateFloat() {
+	static  float generateFloat() {
 		return (static_cast<float>(rand()) / static_cast<float>(RAND_MAX));
 	}
 
@@ -53,7 +53,7 @@ public:
 	 * @param min The minimal value of interval.
 	 * @param max The maximal value of interval.
 	 */
-	static inline float generateFloat(float min, float max) {
+	static  float generateFloat(float min, float max) {
 		return (static_cast<float>(rand()) / static_cast<float>(RAND_MAX) / max) + min;
 	}
 };

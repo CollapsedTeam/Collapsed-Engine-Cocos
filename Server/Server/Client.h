@@ -32,7 +32,7 @@ public:
 	 * 
 	 * @return 
 	 */
-	inline const NetGUID& getGUID() const {
+	const NetGUID& getGUID() const {
 		return _guid;
 	}
 

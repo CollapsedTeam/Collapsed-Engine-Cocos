@@ -28,7 +28,7 @@ public:
 	 * 
 	 * @param text 
 	 */
-	static inline void write(cchar* text, ...) {
+	static void write(cchar* text, ...) {
 		va_list list;
 		va_start(list, text);
 		vprintf(text, list);
@@ -39,7 +39,7 @@ public:
 	 * 
 	 * @param text 
 	 */
-	static inline void writeLine(cchar* text, ...) {
+	static void writeLine(cchar* text, ...) {
 		va_list list;
 		va_start(list, text);
 		vprintf(text, list);
@@ -102,7 +102,7 @@ public:
 	 * 
 	 * @return
 	 */
-	static inline bool isQuitRequested() {
+	static bool isQuitRequested() {
 		return _quitRequest;
 	}
 

@@ -21,16 +21,16 @@ public:
 	void PushAtHead(const queue_type& input, unsigned index);
 	queue_type& operator[] (u32 position) const; // Not a normal thing you do with a queue but can be used for efficiency
 	void RemoveAtIndex(u32 position); // Not a normal thing you do with a queue but can be used for efficiency
-	inline queue_type peek() const;
-	inline queue_type PeekTail() const;
-	inline queue_type pop();
-	inline queue_type PopTail();
+	 queue_type peek() const;
+	 queue_type PeekTail() const;
+	 queue_type pop();
+	 queue_type PopTail();
 	// Debug: Set pointer to 0, for memory leak detection
-	inline queue_type PopDeref();
-	inline u32 size() const;
-	inline bool isEmpty() const;
-	inline u32 AllocationSize() const;
-	inline void Clear();
+	 queue_type PopDeref();
+	 u32 size() const;
+	 bool isEmpty() const;
+	 u32 AllocationSize() const;
+	 void Clear();
 	void Compress();
 	bool Find(const queue_type& q);
 	void clearAndForceAllocation(int size); // Force a memory allocation to a certain larger size
@@ -44,7 +44,7 @@ private:
 
 
 template <class queue_type>
-inline u32 Queue<queue_type>::size() const
+ u32 Queue<queue_type>::size() const
 {
 	if (head <= tail)
 		return tail - head;
@@ -53,13 +53,13 @@ inline u32 Queue<queue_type>::size() const
 }
 
 template <class queue_type>
-inline bool Queue<queue_type>::isEmpty() const
+ bool Queue<queue_type>::isEmpty() const
 {
 	return head == tail;
 }
 
 template <class queue_type>
-inline u32 Queue<queue_type>::AllocationSize() const
+ u32 Queue<queue_type>::AllocationSize() const
 {
 	return allocation_size;
 }
@@ -81,7 +81,7 @@ Queue<queue_type>::~Queue()
 }
 
 template <class queue_type>
-inline queue_type Queue<queue_type>::pop()
+ queue_type Queue<queue_type>::pop()
 {
 #ifdef JINRA_DEBUG
 	ASSERT(head != tail);
@@ -98,7 +98,7 @@ inline queue_type Queue<queue_type>::pop()
 }
 
 template <class queue_type>
-inline queue_type Queue<queue_type>::PopTail()
+ queue_type Queue<queue_type>::PopTail()
 {
 #ifdef JINRA_DEBUG
 	ASSERT(head != tail);
@@ -113,7 +113,7 @@ inline queue_type Queue<queue_type>::PopTail()
 }
 
 template <class queue_type>
-inline queue_type Queue<queue_type>::PopDeref()
+ queue_type Queue<queue_type>::PopDeref()
 {
 	if (++head == allocation_size)
 		head = 0;
@@ -173,7 +173,7 @@ void Queue<queue_type>::PushAtHead(const queue_type& input, unsigned index)
 
 
 template <class queue_type>
-inline queue_type Queue<queue_type>::peek() const
+ queue_type Queue<queue_type>::peek() const
 {
 #ifdef JINRA_DEBUG
 	ASSERT(head != tail);
@@ -183,7 +183,7 @@ inline queue_type Queue<queue_type>::peek() const
 }
 
 template <class queue_type>
-inline queue_type Queue<queue_type>::PeekTail() const
+ queue_type Queue<queue_type>::PeekTail() const
 {
 #ifdef JINRA_DEBUG
 	ASSERT(head != tail);
@@ -293,7 +293,7 @@ bool Queue<queue_type>::operator= (const Queue& original_copy)
 }
 
 template <class queue_type>
-inline void Queue<queue_type>::Clear()
+ void Queue<queue_type>::Clear()
 {
 	if (allocation_size == 0)
 		return;
@@ -365,7 +365,7 @@ void Queue<queue_type>::clearAndForceAllocation(int size)
 }
 
 template <class queue_type>
-inline queue_type& Queue<queue_type>::operator[] (u32 position) const
+ queue_type& Queue<queue_type>::operator[] (u32 position) const
 {
 #ifdef JINRA_DEBUG
 	ASSERT(position < size());

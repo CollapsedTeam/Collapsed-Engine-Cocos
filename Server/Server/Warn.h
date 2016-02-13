@@ -62,7 +62,7 @@ public:
 	 *
 	 * @return
 	 */
-	inline s32 getLine() const throw() { 
+	s32 getLine() const throw() { 
 		return _line; 
 	}
 
@@ -70,7 +70,7 @@ public:
 	 *
 	 * @return
 	 */
-	inline cchar* getFileName() const throw() {
+	cchar* getFileName() const throw() {
 		return _fileName.c_str();
 	}
 
@@ -78,7 +78,7 @@ public:
 	 * 
 	 * @return
 	 */
-	inline cchar* getFunction() const throw() {
+	cchar* getFunction() const throw() {
 		return _function.c_str();
 	}
 

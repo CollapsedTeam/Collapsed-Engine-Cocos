@@ -31,7 +31,7 @@ public:
 
 	void close();
 
-	inline bool isOpen() const { 
+	bool isOpen() const { 
 		return _file.is_open(); 
 	}
 

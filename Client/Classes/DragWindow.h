@@ -23,15 +23,15 @@ class DragWindow : public Window
 public:
 	DragWindow() = default;
 
-	inline Rect getDragRect() const {
+	Rect getDragRect() const {
 		return _dragRect;
 	}
 
-	inline void setDragRect(const Rect& dragRect) {
+	void setDragRect(const Rect& dragRect) {
 		_dragRect = dragRect;
 	}
 
-	inline void setDragRect(float dragX, float dragY, float dragWidth, float dragHeight) {
+	void setDragRect(float dragX, float dragY, float dragWidth, float dragHeight) {
 		_dragRect.setRect(dragX, dragY, dragWidth, dragHeight);
 	}
 

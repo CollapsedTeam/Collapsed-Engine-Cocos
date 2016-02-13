@@ -27,7 +27,7 @@ public:
 
 	void loadAfterConnection();
 
-	inline void setInfo(const SString& text) {
+	void setInfo(const SString& text) {
 		GET_CHILD(getChildByName("Scene"), "lblLoading", Text)->setString(text);
 	}
 

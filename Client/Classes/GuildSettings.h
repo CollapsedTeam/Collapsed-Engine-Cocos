@@ -21,17 +21,17 @@ class GuildSettings : public DragWindow
 public:
 	void setLanguage() override;
 
-	inline cchar* getRankName(u8 index) {
+	cchar* getRankName(u8 index) {
 		return GET_CHILD(_main, StringUtils::format("txtRank%u", index), 
 						 TextField)->getString().c_str();
 	}
 
-	inline void setRankName(u8 index, const SString& rankName) {
+	void setRankName(u8 index, const SString& rankName) {
 		GET_CHILD(_main, StringUtils::format("txtRank%u", index), TextField)->setString(
 			rankName);
 	}
 
-	inline void setDescription(const SString& description) {
+	void setDescription(const SString& description) {
 		GET_CHILD(_main, "txtDesc", TextField)->setString(description);
 	}
 

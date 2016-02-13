@@ -67,7 +67,7 @@ public:
 	 */
 	void toString(bool writePort, char *dest, char portDelineator = '|') const;
 
-	inline bool isLANAddress() {
+	 bool isLANAddress() {
 #if defined(__WIN32__)
 		return (address.addr4.sin_addr.S_un.S_un_b.s_b1 == 10 || 
 				address.addr4.sin_addr.S_un.S_un_b.s_b1 == 192);
@@ -87,7 +87,7 @@ public:
 	 * Return the IP version, either IPV4 or IPV6.
 	 * @return Returns either 4 or 6.
 	 */
-	inline u8 getIPVersion() const {
+	 u8 getIPVersion() const {
 		return (address.addr4.sin_family == AF_INET) ? 4 : 6;
 	}
 
@@ -95,7 +95,7 @@ public:
 	 * Returns either IPPROTO_IP or IPPROTO_IPV6.
 	 * @return 
 	 */
-	inline u32 getIPPROTO() const {
+	 u32 getIPPROTO() const {
 #if defined(JINRA_SUPPORT_IPV6)
 		return (address.addr4.sin_family == AF_INET) ? IPPROTO_IP : IPPROTO_IPV6;
 #else // defined(JINRA_SUPPORT_IPV6)
@@ -107,7 +107,7 @@ public:
 	 * Returns the port in host order (this is what you normally use).
 	 * @return
 	 */
-	inline u16 getPort() const {
+	 u16 getPort() const {
 		return ntohs(address.addr4.sin_port);
 	}
 
@@ -115,7 +115,7 @@ public:
 	 * Returns the port in network order
 	 * @return
 	 */
-	inline u16 getPortNetworkOrder() const {
+	 u16 getPortNetworkOrder() const {
 		return address.addr4.sin_port;
 	}
 
@@ -123,7 +123,7 @@ public:
 	 * Return the size to write to a bitStream.
 	 * @return 
 	 */
-	inline static s32 getSize() {
+	 static s32 getSize() {
 #if defined(JINRA_SUPPORT_IPV6)
 		return sizeof(sockaddr_in6) + sizeof(s8);
 #else // defined(JINRA_SUPPORT_IPV6)
@@ -134,7 +134,7 @@ public:
 	/** 
 	 * Call SetToLoopback(), with whatever IP version is currently held. Defaults to IPV4.
 	 */
-	inline void setToLoopback() {
+	 void setToLoopback() {
 		setToLoopback(getIPVersion());
 	}
 
@@ -163,12 +163,12 @@ public:
 
 	SystemAddress& operator=(const SystemAddress& systemAddress);
 
-	inline bool operator==(const SystemAddress& systemAddress) const {
+	 bool operator==(const SystemAddress& systemAddress) const {
 		return (address.addr4.sin_port == systemAddress.address.addr4.sin_port && 
 				equalsExcludingPort(systemAddress));
 	}
 
-	inline bool operator!=(const SystemAddress& systemAddress) const {
+	 bool operator!=(const SystemAddress& systemAddress) const {
 		return (*this == systemAddress) == false;
 	}
 

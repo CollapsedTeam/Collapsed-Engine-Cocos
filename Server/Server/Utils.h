@@ -27,7 +27,7 @@ public:
 	 * @return Return clamped value
 	 */
 	template <typename Type> 
-	static inline Type clamp(const Type& value, const Type& low, const Type& high) { 
+	static Type clamp(const Type& value, const Type& low, const Type& high) { 
 		return (value < low) ? low : ((value > high) ? high : value); 
 	}
 
@@ -36,7 +36,7 @@ public:
 	 * @param string String to be converted.
 	 * @return Return converted number.
 	 */
-	static inline float strToFloat(cchar* string) {
+	static float strToFloat(cchar* string) {
 		float variable;
 		strToFloat(string, &variable);
 		return variable;
@@ -47,7 +47,7 @@ public:
 	 * @param string String to be converted.
 	 * @param variable Pointer to float variable.
 	 */
-	static inline void strToFloat(cchar* string, float* variable) {
+	static void strToFloat(cchar* string, float* variable) {
 		sscanf(string, "%f", variable); 
 	}
 
@@ -56,7 +56,7 @@ public:
 	 * @param string String to be converted.
 	 * @return Return converted boolean.
 	 */
-	static inline bool strToBool(cchar* string) {
+	static bool strToBool(cchar* string) {
 		return !(strcmp(string, "false") == 0 || strcmp(string, "0") == 0); 
 	}
 
@@ -65,7 +65,7 @@ public:
 	 * @param value Integer to be converted.
 	 * @return Return converted string.
 	 */
-	static inline StdString intToStr(s32 value) {
+	static StdString intToStr(s32 value) {
 		char buffer[11];
 		intToStr(value, buffer);
 		return buffer;
@@ -76,7 +76,7 @@ public:
 	 * @param value Integer to be converted.
 	 * @param buffer Buffer for string.
 	 */
-	static inline void intToStr(s32 value, char* buffer) { 
+	static void intToStr(s32 value, char* buffer) { 
 		sprintf(buffer, "%d", value); 
 	}
 
@@ -85,7 +85,7 @@ public:
 	 * @param value Unsigned integer to be converted.
 	 * @return Return converted string.
 	 */
-	static inline std::string uintToStr(u32 value) {
+	static std::string uintToStr(u32 value) {
 		char buffer[11];
 		uintToStr(value, buffer);
 		return buffer;
@@ -96,7 +96,7 @@ public:
 	 * @param value Unsigned integer to be converted.
 	 * @param buffer Buffer for string.
 	 */
-	static inline void uintToStr(u32 value, char* buffer) { 
+	static void uintToStr(u32 value, char* buffer) { 
 		sprintf(buffer, "%u", value); 
 	}
 
@@ -105,7 +105,7 @@ public:
 	 * @param ip IP to check.
 	 * @return Return true if IP has valid format. Otherwise, it returns false.
 	 */
-	static inline bool isIPFormat(const String& ip) {
+	static bool isIPFormat(const String& ip) {
 		sockaddr_in sa;
 		return (inet_pton(AF_INET, ip.c_str(), &(sa.sin_addr)) != 0);
 	}
