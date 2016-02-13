@@ -30,51 +30,51 @@ public:
 		_intelligenceGain(intelligenceGain)
 	{ }
 
-	inline u32 getID() const {
+	u32 getID() const {
 		return _id;
 	}
 
-	inline cchar* getName() const {
+	cchar* getName() const {
 		return _name.c_str();
 	}
 
-	inline u8 getHealth() const {
+	u8 getHealth() const {
 		return _health;
 	}
 
-	inline u8 getPower() const {
+	u8 getPower() const {
 		return _power;
 	}
 
-	inline u8 getPhysique() const {
+	u8 getPhysique() const {
 		return _physique;
 	}
 
-	inline u8 getDexterity() const {
+	u8 getDexterity() const {
 		return _dexterity;
 	}
 
-	inline u8 getIntelligence() const {
+	u8 getIntelligence() const {
 		return _intelligence;
 	}
 
-	inline u8 getHealthGain() const {
+	u8 getHealthGain() const {
 		return _healthGain;
 	}
 
-	inline u8 getPowerGain() const {
+	u8 getPowerGain() const {
 		return _powerGain;
 	}
 
-	inline u8 getPhysiqueGain() const {
+	u8 getPhysiqueGain() const {
 		return _physiqueGain;
 	}
 
-	inline u8 getDexterityGain() const {
+	u8 getDexterityGain() const {
 		return _dexterityGain;
 	}
 
-	inline u8 getIntelligenceGain() const {
+	u8 getIntelligenceGain() const {
 		return _intelligenceGain;
 	}
 

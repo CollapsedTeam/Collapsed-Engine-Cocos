@@ -127,24 +127,24 @@ enum class ChatChannelID : u8
 class Global
 {
 public:
-	static inline bool hasUpperCase(const SString& str) {
+	static bool hasUpperCase(const SString& str) {
 		return std::any_of(str.begin(), str.end(), ::isupper);
 	}
 
-	static inline bool hasNumber(const SString& str) {
+	static bool hasNumber(const SString& str) {
 		return std::any_of(str.begin(), str.end(), Global::isNumber);
 	}
 
-	static inline bool isCharacter(const char character) {
+	static bool isCharacter(const char character) {
 		return ((character >= 'a' && character <= 'z') ||
 				(character >= 'A' && character <= 'Z'));
 	}
 
-	static inline bool isNumber(const char character) {
+	static bool isNumber(const char character) {
 		return (character >= '0' && character <= '9');
 	}
 
-	static inline bool isValidString(const SString& str)
+	static bool isValidString(const SString& str)
 	{
 		const char allowedCharacters[] =
 			"0123456789"
@@ -183,7 +183,7 @@ public:
 		return Message::SUCCESS;
 	}
 
-	static inline Message isValidPassword(const SString& password) {
+	static Message isValidPassword(const SString& password) {
 		if (password.length() < MIN_LEN_PASSWORD)	   
 			return Message::PASSWORD_TOO_SHORT;
 

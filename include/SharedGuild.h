@@ -31,73 +31,73 @@ class Guild
 {
 public:
 	/**
-	 * Creates new guild object.
+	 *
 	 */
 	Guild() { }
 
 	/**
-	 * Creates new guild object.
-	 * @param[in] tag Tag of guild.
+	 * 
+	 * @param[in] tag
 	 */
 	Guild(const SString& tag) 
 		: _tag(tag)
 	{ }
 
 	/**
-	 * Creates new guild object.
-	 * @param[in] tag Tag of guild.
-	 * @param[in] description Description of guild.
+	 *
+	 * @param[in] tag
+	 * @param[in] description
 	 */
 	Guild(const SString& tag, const SString& description)
 		: _tag(tag), _description(description)
 	{ }
 
 	/**
-	 * Gets tag of guild.
-	 * @return Return tag of guild.
+	 * 
+	 * @return
 	 */
-	inline cchar* getTag() const {
+	cchar* getTag() const {
 		return _tag.c_str();
 	}
 
 	/**
-	 * Gets description of guild.
-	 * @return Return description of guild.
+	 *
+	 * @return
 	 */
-	inline cchar* getDescription() const {
+	cchar* getDescription() const {
 		return _description.c_str();
 	}
 
 	/**
-	 * Gets rank name[index] of guild.
-	 * @return Return rank name[index] of guild.
+	 *
+	 * @return
 	 */
-	inline cchar* getRankName(u8 index) const {
+	cchar* getRankName(u8 index) const {
 		return _ranksNames[index].c_str();
 	}
 
 	/**
-	 * Sets tag of guild.
-	 * @param tag Tag of guild.
+	 * 
+	 * @param tag
 	 */
-	inline void setTag(const SString& tag) {
+	void setTag(const SString& tag) {
 		_tag = tag;
 	}
 
 	/**
-	 * Sets description of guild.
-	 * @param description Description of guild.
+	 * 
+	 * @param description
 	 */
-	virtual inline void setDescription(const SString& description) {
+	virtual void setDescription(const SString& description) {
 		_description = description;
 	}
 
 	/**
-	 * Sets rank name[index] of guild.
-	 * @param index Index of rank name.
-	 * @param rankName Rank name of guild.
+	 * 
+	 * @param index
+	 * @param rankName
 	 */
-	virtual inline void setRankName(u8 index, const SString& rankName) {
+	virtual void setRankName(u8 index, const SString& rankName) {
 		_ranksNames[index] = rankName;
 	}
 

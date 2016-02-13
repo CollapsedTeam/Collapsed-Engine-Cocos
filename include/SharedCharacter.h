@@ -22,17 +22,17 @@ class Character
 {
 public:
 	/**
-	 * Creates new character object.
-	 * @param[in] id ID of character.
-	 * @param[in] name Name of character.
-	 * @param[in] level Level of character.
-	 * @param[in] male Sex of character.
-	 * @param[in] cash Cash of character.
-	 * @param[in] health Health of character.
-	 * @param[in] power Power of character.
-	 * @param[in] physique Physique of character.
-	 * @param[in] dexterity Dexterity of character.
-	 * @param[in] intelligence Intelligence of character.
+	 * 
+	 * @param[in] id
+	 * @param[in] name 
+	 * @param[in] level
+	 * @param[in] male
+	 * @param[in] cash
+	 * @param[in] health
+	 * @param[in] power
+	 * @param[in] physique
+	 * @param[in] dexterity
+	 * @param[in] intelligence
 	 */
 	Character(u32 id, const SString& name, u16 level, bool male, u32 cash, u16 health, 
 			  u16 power, u16 physique, u16 dexterity, u16 intelligence)
@@ -42,162 +42,162 @@ public:
 	{ }
 
 	/**
-	 * Checks if a character's sex is male.
-	 * @return Return true if character's sex is male. Otherwise, it returns false.
+	 * 
+	 * @return 
 	 */
-	inline bool isMale() const {
+	bool isMale() const {
 		return _male;
 	}
 
 	/**
-	 * Checks if a character's sex is female.
-	 * @return Return true if character's sex is female. Otherwise, it returns false.
+	 * 
+	 * @return
 	 */
-	inline bool isFemale() const {
+	bool isFemale() const {
 		return !_male;
 	}
 
 	/**
-	 * Gets ID of character.
-	 * @return Return ID of character.
+	 * 
+	 * @return 
 	 */
-	inline u32 getID() const {
+	u32 getID() const {
 		return _id;
 	}
 
 	/**
-	 * Gets name of character.
-	 * @return Return name of character.
+	 * 
+	 * @return 
 	 */
-	inline cchar* getName() const {
+	cchar* getName() const {
 		return _name.c_str();
 	}
 
 	/**
-	 * Gets level of character.
-	 * @return Return level of character.
+	 * 
+	 * @return
 	 */
-	inline u16 getLevel() const {
+	u16 getLevel() const {
 		return _level;
 	}
 
 	/**
-	 * Gets cash of character.
-	 * @return Return cash of character.
+	 *
+	 * @return
 	 */
-	inline u32 getCash() const {
+	u32 getCash() const {
 		return _cash;
 	}
 
 	/**
-	 * Gets health of character.
-	 * @return Return health of character.
+	 *
+	 * @return
 	 */
-	inline u16 getHealth() const {
+	u16 getHealth() const {
 		return _health;
 	}
 
 	/**
-	 * Gets power of character.
-	 * @return Return power of character.
+	 * 
+	 * @return
 	 */
-	inline u16 getPower() const {
+	u16 getPower() const {
 		return _power;
 	}
 
 	/**
-	 * Gets physique of character.
-	 * @return Return physique of character.
+	 *
+	 * @return 
 	 */
-	inline u16 getPhysique() const {
+	u16 getPhysique() const {
 		return _physique;
 	}
 
 	/**
-	 * Gets dexterity of character.
-	 * @return Return dexterity of character.
+	 * 
+	 * @return
 	 */
-	inline u16 getDexterity() const {
+	u16 getDexterity() const {
 		return _dexterity;
 	}
 
 	/**
-	 * Gets intelligence of character.
-	 * @return Return intelligence of character.
+	 * 
+	 * @return 
 	*/
-	inline u16 getIntelligence() const {
+	u16 getIntelligence() const {
 		return _intelligence;
 	}
 	
 	/**
-	 * Sets ID of character.
-	 * @param id ID of character.
+	 * 
+	 * @param id
 	 */
-	inline void setID(u32 id) {
+	void setID(u32 id) {
 		_id = id;
 	}
 
 	/**
-	 * Sets name of character.
-	 * @param name Name of character.
+	 *
+	 * @param name
 	 */
-	inline void setName(const SString& name) {
+	void setName(const SString& name) {
 		_name = name;
 	}
 
 	/**
-	 * Sets level of character.
-	 * @param level Level of character.
+	 * 
+	 * @param
 	 */
-	inline void setLevel(u16 level) {
+	void setLevel(u16 level) {
 		_level = level;
 	}
 
 	/**
-	 * Sets cash of character.
-	 * @param cash Cash of character.
+	 * 
+	 * @param cash
 	 */
-	inline void setCash(u32 cash) {
+	void setCash(u32 cash) {
 		_cash = cash;
 	}
 
 	/**
-	 * Sets health of character.
-	 * @param health Health of character.
+	 * 
+	 * @param health 
 	 */
-	inline void setHealth(u16 health) {
+	void setHealth(u16 health) {
 		_health = health;
 	}
 
 	/**
-	 * Sets power of character.
-	 * @param power Power of character.
+	 * 
+	 * @param power
 	 */
-	inline void setPower(u16 power) {
+	void setPower(u16 power) {
 		_power = power;
 	}
 
 	/**
-	 * Sets physique of character.
-	 * @param physique Physique of character.
+	 * 
+	 * @param physique
 	 */
-	inline void setPhysique(u16 physique) {
+	void setPhysique(u16 physique) {
 		_physique = physique;
 	}
 
 	/**
-	 * Sets dexterity of character.
-	 * @param dexterity Dexterity of character.
+	 * 
+	 * @param dexterity
 	 */
-	inline void setDexterity(u16 dexterity) {
+	void setDexterity(u16 dexterity) {
 		_dexterity = dexterity;
 	}
 
 	/**
-	 * Sets intelligence of character.
-	 * @param intelligence Intelligence of character.
+	 * 
+	 * @param intelligence
 	 */
-	inline void setIntelligence(u16 intelligence) {
+	void setIntelligence(u16 intelligence) {
 		_intelligence = intelligence;
 	}
 
