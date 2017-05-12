@@ -24,6 +24,6 @@ It's more like a framework rather than engine, because it contains only basic fe
 
 ## Few things to do before start
 -   import sql/mysql.sql file to your MySQL database
--   copy config.tpl.ini (Server/Server/Data) and rename to config.ini
+-   copy config.tpl.ini (Server/Server/Data) and rename it to config.ini
 -   edit config.ini
 -   edit Config.h (Client/Classes)
